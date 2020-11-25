@@ -124,12 +124,15 @@ section.banner-section {
                 color: $primaryClr;
                 font-size: 48px;
                 padding-top: 13px;
-                line-height: 1.0;
+                line-height: 0.8;
                 font-family: $Battlefin;
                 span {
                     font-size: 18px;
                     font-family: $NbRegular;
                 }
+            }
+            h1.sense {
+                text-align: center;
             }
             p {
                 color: $primaryClr;

@@ -115,13 +115,17 @@ section.banner-section .banner-content .banner-col h1 {
   color: #FFF8F8;
   font-size: 48px;
   padding-top: 13px;
-  line-height: 1.0;
+  line-height: 0.8;
   font-family: "Battlefin-Black";
 }
 
 section.banner-section .banner-content .banner-col h1 span {
   font-size: 18px;
   font-family: "NBInternational-Regular";
+}
+
+section.banner-section .banner-content .banner-col h1.sense {
+  text-align: center;
 }
 
 section.banner-section .banner-content .banner-col p {
