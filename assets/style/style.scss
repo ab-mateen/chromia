@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Battlefin-Black';
+    src: url('fonts/Battlefin-Black.otf') format("otf");
+    src: url('fonts/Battlefin-Black.woff') format("woff");
+    src: url('fonts/Battlefin-Black.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'NBInternational-Light';
+    src: url('fonts/') format("ttf");
+    src: url('fonts/NBInternationalRegularWebfont.woff') format("woff");
+    src: url('fonts/NBInternationalRegularWebfont.woff2') format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NBInternational-Regular';
+    src: url('fonts/NB-International-Regular-Webfont.ttf') format("ttf");
+    src: url('fonts/NBInternationalRegularWebfont.woff') format("woff");
+    src: url('fonts/NBInternationalRegularWebfont.woff2') format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NBInternational-Bold';
+    src: url('fonts/NB-International-Bold-Webfont.ttf') format("ttf");
+    src: url('fonts/NBInternationalBoldWebfont.woff') format("woff");
+    src: url('fonts/NBInternationalBoldWebfont.woff2') format("woff2");
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1F1A23;
+    color: #FFF8F8;
+    font-family: 'NBInternational-Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+// Variables
+$primaryBg: #1E1E1E;
+$secondaryBg: #17111B;
+$primaryClr: #FFF8F8;
+$secondaryClr: #5A5A5A;
+$borderoval: 30px;
+$primaryBtn: #FF405E;
+$NbLight: 'NBInternational-Light';
+$NbRegular: 'NBInternational-Regular';
+$NbBold: 'NBInternational-Bold';
+$Battlefin: 'Battlefin-Black';
+// Header Style
+header {
+    // Header Language Bar
+    .header-lang-bar {
+        padding-top: 15px;
+        .lang-bar-content {
+            max-width: 110px;
+            margin-left: auto;
+            p {
+                color: $secondaryClr;
+                font-family: $NbBold;
+            }
+        }
+    }
+    // Navigation
+    .navigation {
+        margin-top: 5px;
+        nav {
+            .navbar-nav {
+                margin-left: auto;
+                .nav-link {
+                    color: $primaryClr;
+                    font-family: $NbBold;
+                    i {
+                        background: $primaryClr;
+                        color: $primaryBg;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        padding: 6px 6px;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Banner Section
+section.banner-section {
+    height: calc(100vh - 113px);
+    .banner-content {
+        padding-top: 86px;
+        .banner-col {
+            h1 {
+                color: $primaryClr;
+                font-size: 48px;
+                padding-top: 13px;
+                line-height: 1.0;
+                font-family: $Battlefin;
+                span {
+                    font-size: 18px;
+                    font-family: $NbRegular;
+                }
+            }
+            p {
+                color: $primaryClr;
+                margin: 41px 0 0;
+                font-size: 19px;
+                font-family: $NbRegular;
+            }
+            .banner-email-btn {
+                margin-top: 57px;
+                max-width: 440px;
+                p {
+                    color: #7B7B7B;
+                    margin-bottom: 16px;
+                    font-size: 18px;
+                }
+                input {
+                    background: #393939;
+                    border-radius: $borderoval;
+                    height: 54px;
+                    border: none;
+                    outline: 0;
+                    padding-left: 20px;
+                    &::placeholder {
+                        color: $primaryClr;
+                        font-size: 18px;
+                    }
+                }
+                a {
+                    background: $primaryBtn;
+                    color: $primaryClr;
+                    border-radius: $borderoval;
+                    text-decoration: none;
+                    height: 40px;
+                    width: 100%;
+                    max-width: 125px;
+                    text-align: center;
+                    padding-top: 7px;
+                    font-weight: 500;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 15px;
+                    left: unset;
+                    margin: auto;
+                }
+            }
+        }
+        .banner-img {
+            padding-left: 40px;
+        }
+    }
+}
+
+// Commuity Section
+section.community-sec {
+    margin-top: 15px;
+    .community-col {
+        img {
+            max-width: 80px;
+        }
+        h4 {
+            margin: 16px 0;
+            font-family: $NbBold;
+            font-size: 22px;
+        }
+        p {
+            font-family: $NbRegular;
+            max-width: 320px;
+        }
+    }
+}
+
+// BlockChain Section
+section.blockchain-sec {
+    .blockchain-content {
+        padding: 138px 0 0 0px;
+        .blockchain-head {
+            margin: 0 auto;
+            max-width: 580px;
+            h2 {
+                font-size: 59px;
+                font-family: $Battlefin;
+                line-height: 1.1;
+                span {
+                    font-size: 35px;
+                    font-family: $NbRegular;
+                }
+            }
+            h2.blockchain,
+            h2.world {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
