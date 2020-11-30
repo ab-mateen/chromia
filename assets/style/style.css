@@ -1,6 +1,32 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@font-face {
+  font-family: 'Battlefin-Black';
+  src: url("fonts/Battlefin-Black.otf") format("otf");
+  src: url("fonts/Battlefin-Black.woff") format("woff");
+  src: url("fonts/Battlefin-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NBInternational-Light';
+  src: url("fonts/") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NBInternational-Regular';
+  src: url("fonts/NB-International-Regular-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NBInternational-Bold';
+  src: url("fonts/NB-International-Bold-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalBoldWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalBoldWebfont.woff2") format("woff2");
+  font-weight: 700;
 }
 
 @font-face {
@@ -34,10 +60,52 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'Battlefin-Black';
+  src: url("fonts/Battlefin-Black.otf") format("otf");
+  src: url("fonts/Battlefin-Black.woff") format("woff");
+  src: url("fonts/Battlefin-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NBInternational-Light';
+  src: url("fonts/") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NBInternational-Regular';
+  src: url("fonts/NB-International-Regular-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NBInternational-Bold';
+  src: url("fonts/NB-International-Bold-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalBoldWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalBoldWebfont.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #1F1A23;
+  background: #1E1E1E;
   color: #FFF8F8;
   font-family: 'NBInternational-Regular';
 }
@@ -60,79 +128,247 @@ img {
   height: auto;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+.btn-border {
+  border-radius: 30px;
 }
 
-header .header-lang-bar {
-  padding-top: 15px;
+/* Font styles */
+.font-heading {
+  font-family: 'Battlefin-Black';
+}
+
+.font-main {
+  font-family: "NBInternational-Regular";
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+h1 {
+  line-height: 0.9em;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 59px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.bg-cdark {
+  background: #1E191E;
+}
+
+.bg-gray {
+  background: #393939;
+}
+
+.bg-red {
+  background: #FF405E;
+}
+
+.bg-darkred {
+  background: #d41a45;
+}
+
+.bg-orange {
+  background: #FF6F2B;
+}
+
+.bg-orangedark {
+  background: #EB4521;
+}
+
+.bg-purple {
+  background: #CB92F0;
+}
+
+.bg-purpledark {
+  background: #9e5ecf;
+}
+
+.bg-pink {
+  background: #FFAFC1;
+}
+
+.bg-pinkdark {
+  background: #FF87A6;
+}
+
+.bg-yellow {
+  background: #FFB600;
+}
+
+.bg-yellowdark {
+  background: #ff9100;
+}
+
+.bg-offwhite {
+  background: #fff8f8;
+}
+
+.text-cdark {
+  color: #1E191E;
+}
+
+.text-gray {
+  color: #393939;
+}
+
+.text-red {
+  color: #FF405E;
+}
+
+.text-red-dark {
+  color: #d41a45;
+}
+
+.text-orange {
+  color: #FF6F2B;
+}
+
+.text-orange-dark {
+  color: #EB4521;
+}
+
+.text-purple {
+  color: #CB92F0;
+}
+
+.text-purple-dark {
+  color: #9e5ecf;
+}
+
+.text-pink {
+  color: #FFAFC1;
+}
+
+.text-pink-dark {
+  color: #FF87A6;
+}
+
+.text-yellow {
+  color: #FFB600;
+}
+
+.text-yellow-dark {
+  color: #ff9100;
+}
+
+.text-offwhite {
+  color: #fff8f8;
+}
+
+.text-white-dark {
+  color: #f5eeee;
+}
+
+/* Opacity */
+.op-0 {
+  opacity: 0;
+}
+
+.op-1 {
+  opacity: 0.1;
+}
+
+.op-2 {
+  opacity: 0.2;
+}
+
+.op-3 {
+  opacity: 0.3;
+}
+
+.op-4 {
+  opacity: 0.4;
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.op-6 {
+  opacity: 0.6;
+}
+
+.op-7 {
+  opacity: 0.7;
+}
+
+.op-8 {
+  opacity: 0.8;
+}
+
+.op-9 {
+  opacity: 0.9;
+}
+
+.op-10 {
+  opacity: 1;
 }
 
 header .header-lang-bar .lang-bar-content {
-  max-width: 110px;
-  margin-left: auto;
-}
-
-header .header-lang-bar .lang-bar-content p {
-  color: #5A5A5A;
-  font-family: "NBInternational-Bold";
-}
-
-header .navigation {
-  margin-top: 5px;
-}
-
-header .navigation nav .navbar-nav {
-  margin-left: auto;
-}
-
-header .navigation nav .navbar-nav .nav-link {
-  color: #FFF8F8;
-  font-family: "NBInternational-Bold";
+  max-width: 125px;
 }
 
 header .navigation nav .navbar-nav .nav-link i {
-  background: #FFF8F8;
-  color: #1E1E1E;
-  border-radius: 50%;
   width: 30px;
   height: 30px;
   padding: 6px 6px;
   font-size: 19px;
 }
 
+header .navigation nav .navbar-nav .nav-link i:hover {
+  background: #FFB0C2;
+  color: #fff8f8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 section.banner-section {
   height: calc(100vh - 113px);
 }
 
-section.banner-section .banner-content {
-  padding-top: 86px;
-}
-
-section.banner-section .banner-content .banner-col h1 {
-  color: #FFF8F8;
-  font-size: 48px;
-  padding-top: 13px;
-  line-height: 0.8;
-  font-family: "Battlefin-Black";
-}
-
 section.banner-section .banner-content .banner-col h1 span {
   font-size: 18px;
-  font-family: "NBInternational-Regular";
-}
-
-section.banner-section .banner-content .banner-col h1.sense {
-  text-align: center;
 }
 
 section.banner-section .banner-content .banner-col p {
-  color: #FFF8F8;
   margin: 41px 0 0;
-  font-size: 19px;
-  font-family: "NBInternational-Regular";
+  font-size: 20px;
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn {
@@ -147,8 +383,6 @@ section.banner-section .banner-content .banner-col .banner-email-btn p {
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn input {
-  background: #393939;
-  border-radius: 30px;
   height: 54px;
   border: none;
   outline: 0;
@@ -156,29 +390,30 @@ section.banner-section .banner-content .banner-col .banner-email-btn input {
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn input::-webkit-input-placeholder {
-  color: #FFF8F8;
+  color: #fff8f8;
   font-size: 18px;
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn input:-ms-input-placeholder {
-  color: #FFF8F8;
+  color: #fff8f8;
   font-size: 18px;
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn input::-ms-input-placeholder {
-  color: #FFF8F8;
+  color: #fff8f8;
   font-size: 18px;
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn input::placeholder {
-  color: #FFF8F8;
+  color: #fff8f8;
   font-size: 18px;
 }
 
+section.banner-section .banner-content .banner-col .banner-email-btn input:focus {
+  background: #393939;
+}
+
 section.banner-section .banner-content .banner-col .banner-email-btn a {
-  background: #FF405E;
-  color: #FFF8F8;
-  border-radius: 30px;
   text-decoration: none;
   height: 40px;
   width: 100%;
@@ -194,20 +429,17 @@ section.banner-section .banner-content .banner-col .banner-email-btn a {
   margin: auto;
 }
 
-section.banner-section .banner-content .banner-img {
-  padding-left: 40px;
-}
-
-section.community-sec {
-  margin-top: 15px;
+section.banner-section .banner-content .banner-col .banner-email-btn a:hover {
+  color: #fff8f8;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 section.community-sec .community-col img {
-  max-width: 80px;
+  max-width: 90px;
 }
 
 section.community-sec .community-col h4 {
-  margin: 16px 0;
   font-family: "NBInternational-Bold";
   font-size: 22px;
 }
@@ -217,34 +449,204 @@ section.community-sec .community-col p {
   max-width: 320px;
 }
 
-section.blockchain-sec .blockchain-content {
-  padding: 138px 0 0 0px;
-}
-
 section.blockchain-sec .blockchain-content .blockchain-head {
-  margin: 0 auto;
   max-width: 580px;
 }
 
 section.blockchain-sec .blockchain-content .blockchain-head h2 {
   font-size: 59px;
-  font-family: "Battlefin-Black";
-  line-height: 1.1;
 }
 
 section.blockchain-sec .blockchain-content .blockchain-head h2 span {
   font-size: 35px;
-  font-family: "NBInternational-Regular";
-}
-
-section.blockchain-sec .blockchain-content .blockchain-head h2.blockchain,
-section.blockchain-sec .blockchain-content .blockchain-head h2.world {
-  text-align: center;
 }
 
 section.blockchain-sec .blockchain-content .blockchain-head p {
-  text-align: center;
   font-size: 18px;
-  margin-top: 40px;
+  line-height: 1.3;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-text {
+  max-width: 470px;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-text p {
+  font-family: "NBInternational-Bold";
+  font-size: 26px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row {
+  max-width: 1040px;
+  padding-top: 100px;
+  border-bottom: 1px solid rgba(255, 248, 248, 0.4);
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-1 {
+  border: 2px solid #FFAFC1;
+  border-radius: 7px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 {
+  border: 2px solid #CB92F0;
+  border-radius: 7px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content h5 {
+  margin: 23px 0 19px 0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content .blockchain-col-inner {
+  padding-right: 96px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content .custm-list-container .custm-list .list-num p {
+  font-size: 26px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content .custm-list-container .custm-list .list-content {
+  width: 88%;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-img {
+  position: absolute;
+  top: -9%;
+  right: 12%;
+  bottom: unset;
+  left: unset;
+  width: 100%;
+  max-width: 134px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt {
+  padding: 32px 20px 20px 30px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt h2 {
+  font-size: 38px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt h5 {
+  font-size: 21px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt p {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt p.blockchain-content-1 {
+  margin-bottom: 12px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt p.blockchain-content-3 {
+  margin: 12px 0 20px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .power-content h5 {
+  margin-bottom: 6px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .power-content p {
+  max-width: 430px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact h5 {
+  font-size: 20px !important;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col {
+  width: 12%;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col .matter-col {
+  background: rgba(245, 238, 238, 0.4);
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col p {
+  color: #F5EEEE;
+  opacity: 0.6;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .sql {
+  min-height: 96px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .python {
+  min-height: 74px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .java {
+  min-height: 73px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .shell {
+  min-height: 65px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .cc {
+  min-height: 60px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .php {
+  min-height: 47px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .cplus {
+  min-height: 45px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact p.among {
+  padding: 0 7px 10px 0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt {
+  width: 42%;
+  margin: 58px auto 0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt h5 {
+  font-size: 22px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt h2 {
+  font-size: 57px;
+  line-height: 1.0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt p {
+  margin-top: 12px;
+  line-height: 1.3;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt a {
+  max-width: 200px;
+  padding: 9px 0;
+  font-size: 17px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt a:hover {
+  color: #fff8f8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt .relational-border svg {
+  position: absolute;
+  left: -78%;
+  top: -111%;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt .blockchain-border svg {
+  position: absolute;
+  top: -101%;
+  left: -2%;
+}
+
+.ethereumy-content .ethereumy-head h2 span {
+  font-size: 20px;
+}
+
+.ethereumy-content .ethereumy-head::before {
+  content: url(images/eth-diamond-rainbow.png);
 }
 /*# sourceMappingURL=style.css.map */

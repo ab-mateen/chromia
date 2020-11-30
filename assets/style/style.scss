@@ -1,112 +1,29 @@
-* {
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Battlefin-Black';
-    src: url('fonts/Battlefin-Black.otf') format("otf");
-    src: url('fonts/Battlefin-Black.woff') format("woff");
-    src: url('fonts/Battlefin-Black.woff2') format("woff2");
-}
-
-@font-face {
-    font-family: 'NBInternational-Light';
-    src: url('fonts/') format("ttf");
-    src: url('fonts/NBInternationalRegularWebfont.woff') format("woff");
-    src: url('fonts/NBInternationalRegularWebfont.woff2') format("woff2");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'NBInternational-Regular';
-    src: url('fonts/NB-International-Regular-Webfont.ttf') format("ttf");
-    src: url('fonts/NBInternationalRegularWebfont.woff') format("woff");
-    src: url('fonts/NBInternationalRegularWebfont.woff2') format("woff2");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'NBInternational-Bold';
-    src: url('fonts/NB-International-Bold-Webfont.ttf') format("ttf");
-    src: url('fonts/NBInternationalBoldWebfont.woff') format("woff");
-    src: url('fonts/NBInternationalBoldWebfont.woff2') format("woff2");
-    font-weight: 700;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #1F1A23;
-    color: #FFF8F8;
-    font-family: 'NBInternational-Regular';
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-// Variables
-$primaryBg: #1E1E1E;
-$secondaryBg: #17111B;
-$primaryClr: #FFF8F8;
-$secondaryClr: #5A5A5A;
-$borderoval: 30px;
-$primaryBtn: #FF405E;
-$NbLight: 'NBInternational-Light';
-$NbRegular: 'NBInternational-Regular';
-$NbBold: 'NBInternational-Bold';
-$Battlefin: 'Battlefin-Black';
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'framework.scss';
 // Header Style
 header {
     // Header Language Bar
     .header-lang-bar {
-        padding-top: 15px;
         .lang-bar-content {
-            max-width: 110px;
-            margin-left: auto;
-            p {
-                color: $secondaryClr;
-                font-family: $NbBold;
-            }
+            max-width: 125px;
         }
     }
     // Navigation
     .navigation {
-        margin-top: 5px;
         nav {
             .navbar-nav {
-                margin-left: auto;
                 .nav-link {
-                    color: $primaryClr;
-                    font-family: $NbBold;
                     i {
-                        background: $primaryClr;
-                        color: $primaryBg;
-                        border-radius: 50%;
                         width: 30px;
                         height: 30px;
                         padding: 6px 6px;
                         font-size: 19px;
+                        &:hover {
+                            background: $chromia-logo-pink;
+                            color: $chromia-offwhite;
+                            transition: .2s;
+                        }
                     }
                 }
             }
@@ -118,27 +35,15 @@ header {
 section.banner-section {
     height: calc(100vh - 113px);
     .banner-content {
-        padding-top: 86px;
         .banner-col {
             h1 {
-                color: $primaryClr;
-                font-size: 48px;
-                padding-top: 13px;
-                line-height: 0.8;
-                font-family: $Battlefin;
                 span {
                     font-size: 18px;
-                    font-family: $NbRegular;
                 }
             }
-            h1.sense {
-                text-align: center;
-            }
             p {
-                color: $primaryClr;
                 margin: 41px 0 0;
-                font-size: 19px;
-                font-family: $NbRegular;
+                font-size: 20px;
             }
             .banner-email-btn {
                 margin-top: 57px;
@@ -149,21 +54,19 @@ section.banner-section {
                     font-size: 18px;
                 }
                 input {
-                    background: #393939;
-                    border-radius: $borderoval;
                     height: 54px;
                     border: none;
                     outline: 0;
                     padding-left: 20px;
                     &::placeholder {
-                        color: $primaryClr;
+                        color: $chromia-offwhite;
                         font-size: 18px;
+                    }
+                    &:focus {
+                        background: $chromia-gray;
                     }
                 }
                 a {
-                    background: $primaryBtn;
-                    color: $primaryClr;
-                    border-radius: $borderoval;
                     text-decoration: none;
                     height: 40px;
                     width: 100%;
@@ -177,24 +80,24 @@ section.banner-section {
                     right: 15px;
                     left: unset;
                     margin: auto;
+                    &:hover {
+                        color: $chromia-offwhite;
+                        transition: .2s;
+                    }
                 }
             }
-        }
-        .banner-img {
-            padding-left: 40px;
         }
     }
 }
 
 // Commuity Section
 section.community-sec {
-    margin-top: 15px;
+    // padding-bottom: 62px;
     .community-col {
         img {
-            max-width: 80px;
+            max-width: 90px;
         }
         h4 {
-            margin: 16px 0;
             font-family: $NbBold;
             font-size: 22px;
         }
@@ -208,28 +111,222 @@ section.community-sec {
 // BlockChain Section
 section.blockchain-sec {
     .blockchain-content {
-        padding: 138px 0 0 0px;
         .blockchain-head {
-            margin: 0 auto;
             max-width: 580px;
             h2 {
                 font-size: 59px;
-                font-family: $Battlefin;
-                line-height: 1.1;
                 span {
                     font-size: 35px;
-                    font-family: $NbRegular;
                 }
             }
-            h2.blockchain,
-            h2.world {
-                text-align: center;
-            }
             p {
-                text-align: center;
                 font-size: 18px;
-                margin-top: 40px;
+                line-height: 1.3;
             }
+        }
+        .blockchain-text {
+            max-width: 470px;
+            p {
+                font-family: $NbBold;
+                font-size: 26px;
+            }
+        }
+        .blockhain-row {
+            max-width: 1040px;
+            padding-top: 100px;
+            border-bottom: 1px solid rgba(255, 248, 248, 0.4);
+            .blockchain-col-1 {
+                border: 2px solid $chromia-pink;
+                border-radius: 7px;
+            }
+            .blockchain-col-2 {
+                border: 2px solid $chromia-purple;
+                border-radius: 7px;
+                .blockchain-col-content {
+                    h5 {
+                        margin: 23px 0 19px 0;
+                    }
+                    // ul {
+                    //     list-style: none;
+                    //     .li-1 {
+                    //         &::before {
+                    //             content: '1.';
+                    //             font-family: $Battlefin;
+                    //             color: #CB92F0;
+                    //         }
+                    //     }
+                    //     .li-2 {
+                    //         &::before {
+                    //             content: '2.';
+                    //             font-family: $Battlefin;
+                    //             color: #CB92F0;
+                    //         }
+                    //     }
+                    //     .li-3 {
+                    //         &::before {
+                    //             content: '3.';
+                    //             font-family: $Battlefin;
+                    //             color: #CB92F0;
+                    //         }
+                    //     }
+                    // }
+                    .blockchain-col-inner {
+                        padding-right: 96px;
+                    }
+                    .custm-list-container {
+                        .custm-list {
+                            .list-num {
+                                p {
+                                    font-size: 26px;
+                                }
+                            }
+                            .list-content {
+                                width: 88%
+                            }
+                        }
+                    }
+                }
+            }
+            .blockchain-col {
+                .blockchain-col-img {
+                    position: absolute;
+                    top: -9%;
+                    right: 12%;
+                    bottom: unset;
+                    left: unset;
+                    width: 100%;
+                    max-width: 134px;
+                }
+                // .blockChain-col-img-1 {
+                //     top: -9%;
+                // }
+                .blockchain-col-txt {
+                    padding: 32px 20px 20px 30px;
+                    h2 {
+                        font-size: 38px;
+                    }
+                    h5 {
+                        font-size: 21px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 1.3;
+                    }
+                    p.blockchain-content-1 {
+                        margin-bottom: 12px;
+                    }
+                    p.blockchain-content-3 {
+                        margin: 12px 0 20px;
+                    }
+                    .power-content {
+                        h5 {
+                            margin-bottom: 6px;
+                        }
+                        p {
+                            max-width: 430px;
+                        }
+                    }
+                    .matter-of-fact {
+                        h5 {
+                            font-size: 20px !important;
+                        }
+                        .matter-of-fact-row {
+                            // align-items: flex-end;
+                            .matter-main-col {
+                                width: 12%;
+                                .matter-col {
+                                    background: rgba(245, 238, 238, 0.4);
+                                    // height: 100%;
+                                }
+                                p {
+                                    color: #F5EEEE;
+                                    opacity: 0.6;
+                                }
+                            }
+                            .sql {
+                                min-height: 96px;
+                            }
+                            .python {
+                                min-height: 74px;
+                            }
+                            .java {
+                                min-height: 73px;
+                            }
+                            .shell {
+                                min-height: 65px;
+                            }
+                            .cc {
+                                min-height: 60px;
+                            }
+                            .php {
+                                min-height: 47px;
+                            }
+                            .cplus {
+                                min-height: 45px;
+                            }
+                        }
+                        p.among {
+                            padding: 0 7px 10px 0;
+                        }
+                    }
+                }
+            }
+            .blockchain-scndry-txt {
+                width: 42%;
+                margin: 58px auto 0;
+                h5 {
+                    font-size: 22px;
+                }
+                h2 {
+                    font-size: 57px;
+                    line-height: 1.0;
+                }
+                p {
+                    margin-top: 12px;
+                    line-height: 1.3;
+                }
+                a {
+                    max-width: 200px;
+                    padding: 9px 0;
+                    font-size: 17px;
+                    &:hover {
+                        color: $chromia-offwhite;
+                        transition: .2s;
+                    }
+                }
+                .relational-border {
+                    svg {
+                        position: absolute;
+                        left: -78%;
+                        top: -111%;
+                        // left: -340px;
+                        // top: -309px;
+                    }
+                }
+                .blockchain-border {
+                    svg {
+                        position: absolute;
+                        // top: -280px;
+                        // left: -11px;
+                        top: -101%;
+                        left: -2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Plays with Ethereumy Section
+.ethereumy-content {
+    .ethereumy-head {
+        h2 {
+            span {
+                font-size: 20px;
+            }
+        }
+        &::before {
+            content: url(images/eth-diamond-rainbow.png);
         }
     }
 }
