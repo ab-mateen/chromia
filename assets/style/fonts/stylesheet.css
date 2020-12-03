@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'NB International';
+    src: url('NBInternationalLightWebfont.woff2') format('woff2'),
+        url('NBInternationalLightWebfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NB International';
+    src: url('NBInternationalBoldWebfont.woff2') format('woff2'),
+        url('NBInternationalBoldWebfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NB International';
+    src: url('NBInternationalMonoWebfont.woff2') format('woff2'),
+        url('NBInternationalMonoWebfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NB International';
+    src: url('NBInternationalRegularWebfont.woff2') format('woff2'),
+        url('NBInternationalRegularWebfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Battlefin Blk';
+    src: url('Battlefin-Black.woff2') format('woff2'),
+        url('Battlefin-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+

@@ -1,0 +1,938 @@
+@font-face {
+  font-family: 'Battlefin-Black';
+  src: url("fonts/Battlefin-Black.otf") format("otf");
+  src: url("fonts/Battlefin-Black.woff") format("woff");
+  src: url("fonts/Battlefin-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NBInternational-Light';
+  src: url("fonts/") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NBInternational-Regular';
+  src: url("fonts/NB-International-Regular-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NBInternational-Bold';
+  src: url("fonts/NB-International-Bold-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalBoldWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalBoldWebfont.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Battlefin-Black';
+  src: url("fonts/Battlefin-Black.otf") format("otf");
+  src: url("fonts/Battlefin-Black.woff") format("woff");
+  src: url("fonts/Battlefin-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NBInternational-Light';
+  src: url("fonts/") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NBInternational-Regular';
+  src: url("fonts/NB-International-Regular-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NBInternational-Bold';
+  src: url("fonts/NB-International-Bold-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalBoldWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalBoldWebfont.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Battlefin-Black';
+  src: url("fonts/Battlefin-Black.otf") format("otf");
+  src: url("fonts/Battlefin-Black.woff") format("woff");
+  src: url("fonts/Battlefin-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NBInternational-Light';
+  src: url("fonts/") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NBInternational-Regular';
+  src: url("fonts/NB-International-Regular-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalRegularWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalRegularWebfont.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NBInternational-Bold';
+  src: url("fonts/NB-International-Bold-Webfont.ttf") format("ttf");
+  src: url("fonts/NBInternationalBoldWebfont.woff") format("woff");
+  src: url("fonts/NBInternationalBoldWebfont.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1E1E1E;
+  color: #FFF8F8;
+  font-family: 'NBInternational-Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-border {
+  border-radius: 30px;
+}
+
+/* Font styles */
+.font-heading {
+  font-family: 'Battlefin-Black';
+}
+
+.font-main {
+  font-family: "NBInternational-Regular";
+}
+
+.font-main-bold {
+  font-family: "NBInternational-Bold";
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+h1 {
+  line-height: 0.9em;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 59px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.bg-cdark {
+  background: #1E191E;
+}
+
+.bg-dark-2 {
+  background: #17111B;
+}
+
+.bg-light-dark {
+  background: rgba(255, 248, 248, 0.03);
+}
+
+.bg-gray {
+  background: #393939;
+}
+
+.bg-red {
+  background: #FF405E;
+}
+
+.bg-darkred {
+  background: #d41a45;
+}
+
+.bg-orange {
+  background: #FF6F2B;
+}
+
+.bg-orangedark {
+  background: #EB4521;
+}
+
+.bg-purple {
+  background: #CB92F0;
+}
+
+.bg-purpledark {
+  background: #9e5ecf;
+}
+
+.bg-pink {
+  background: #FFAFC1;
+}
+
+.bg-pinkdark {
+  background: #FF87A6;
+}
+
+.bg-yellow {
+  background: #FFB600;
+}
+
+.bg-yellowdark {
+  background: #ff9100;
+}
+
+.bg-offwhite {
+  background: #fff8f8;
+}
+
+.text-cdark {
+  color: #1E191E;
+}
+
+.text-gray {
+  color: #393939;
+}
+
+.text-red {
+  color: #FF405E;
+}
+
+.text-red-dark {
+  color: #d41a45;
+}
+
+.text-orange {
+  color: #FF6F2B;
+}
+
+.text-orange-dark {
+  color: #EB4521;
+}
+
+.text-purple {
+  color: #CB92F0;
+}
+
+.text-purple-dark {
+  color: #9e5ecf;
+}
+
+.text-pink {
+  color: #FFAFC1;
+}
+
+.text-pink-dark {
+  color: #FF87A6;
+}
+
+.text-yellow {
+  color: #FFB600;
+}
+
+.text-yellow-dark {
+  color: #ff9100;
+}
+
+.text-offwhite {
+  color: #fff8f8;
+}
+
+.text-white-dark {
+  color: #f5eeee;
+}
+
+/* Opacity */
+.op-0 {
+  opacity: 0;
+}
+
+.op-1 {
+  opacity: 0.1;
+}
+
+.op-2 {
+  opacity: 0.2;
+}
+
+.op-3 {
+  opacity: 0.3;
+}
+
+.op-4 {
+  opacity: 0.4;
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.op-6 {
+  opacity: 0.6;
+}
+
+.op-7 {
+  opacity: 0.7;
+}
+
+.op-8 {
+  opacity: 0.8;
+}
+
+.op-9 {
+  opacity: 0.9;
+}
+
+.op-10 {
+  opacity: 1;
+}
+
+header .header-lang-bar .lang-bar-content {
+  max-width: 125px;
+}
+
+header .navigation nav .navbar-nav .nav-link i {
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px;
+  font-size: 19px;
+}
+
+header .navigation nav .navbar-nav .nav-link i:hover {
+  background: #FFB0C2;
+  color: #fff8f8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.banner-section {
+  height: calc(100vh - 113px);
+}
+
+section.banner-section .banner-content .banner-col h1 span {
+  font-size: 18px;
+}
+
+section.banner-section .banner-content .banner-col p {
+  margin: 41px 0 0;
+  font-size: 20px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn {
+  margin-top: 57px;
+  max-width: 440px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn p {
+  color: #7B7B7B;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input {
+  height: 54px;
+  border: none;
+  outline: 0;
+  padding-left: 20px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input::-webkit-input-placeholder {
+  color: #fff8f8;
+  font-size: 18px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input:-ms-input-placeholder {
+  color: #fff8f8;
+  font-size: 18px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input::-ms-input-placeholder {
+  color: #fff8f8;
+  font-size: 18px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input::placeholder {
+  color: #fff8f8;
+  font-size: 18px;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input:focus {
+  background: #393939;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn a {
+  text-decoration: none;
+  height: 40px;
+  width: 100%;
+  max-width: 125px;
+  text-align: center;
+  padding-top: 7px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  left: unset;
+  margin: auto;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn a:hover {
+  color: #fff8f8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.services-sec .services-col img {
+  max-width: 90px;
+}
+
+section.services-sec .services-col h4 {
+  font-family: "NBInternational-Bold";
+  font-size: 22px;
+}
+
+section.services-sec .services-col p {
+  font-family: "NBInternational-Regular";
+  max-width: 320px;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-head {
+  max-width: 580px;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-head h2 {
+  font-size: 59px;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-head h2 span {
+  font-size: 35px;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-head p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-text {
+  max-width: 470px;
+}
+
+section.blockchain-sec .blockchain-content .blockchain-text p {
+  font-family: "NBInternational-Bold";
+  font-size: 26px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row {
+  max-width: 1040px;
+  padding-top: 100px;
+  border-bottom: 1px solid rgba(255, 248, 248, 0.4);
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-1 {
+  border: 2px solid #FFAFC1;
+  border-radius: 7px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 {
+  border: 2px solid #CB92F0;
+  border-radius: 7px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content h5 {
+  margin: 23px 0 19px 0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content .blockchain-col-inner {
+  padding-right: 96px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content .custm-list-container .custm-list .list-num p {
+  font-size: 26px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col-2 .blockchain-col-content .custm-list-container .custm-list .list-content {
+  width: 88%;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-img {
+  position: absolute;
+  top: -9%;
+  right: 12%;
+  bottom: unset;
+  left: unset;
+  width: 100%;
+  max-width: 134px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt {
+  padding: 32px 20px 20px 30px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt h2 {
+  font-size: 38px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt h5 {
+  font-size: 21px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt p {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt p.blockchain-content-1 {
+  margin-bottom: 12px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt p.blockchain-content-3 {
+  margin: 12px 0 20px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .power-content h5 {
+  margin-bottom: 6px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .power-content p {
+  max-width: 430px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact h5 {
+  font-size: 20px !important;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col {
+  width: 12%;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col .matter-col {
+  background: rgba(245, 238, 238, 0.4);
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col p {
+  color: #F5EEEE;
+  opacity: 0.6;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col p.pvalue-sql {
+  color: #FFAFC1 !important;
+  opacity: 1 !important;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col .sql {
+  min-height: 96px;
+  background: #FFAFC1;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col .sql p {
+  color: #1E191E !important;
+  opacity: 1 !important;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .python {
+  min-height: 74px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .java {
+  min-height: 73px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .shell {
+  min-height: 65px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .cc {
+  min-height: 60px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .php {
+  min-height: 47px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .cplus {
+  min-height: 45px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact p.among {
+  padding: 0 7px 10px 0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt {
+  width: 42%;
+  margin: 58px auto 0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt h5 {
+  font-size: 22px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt h2 {
+  font-size: 57px;
+  line-height: 1.0;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt p {
+  margin-top: 12px;
+  line-height: 1.3;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt a {
+  max-width: 200px;
+  padding: 9px 0;
+  font-size: 17px;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt a:hover {
+  color: #fff8f8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt .relational-border svg {
+  position: absolute;
+  left: -78%;
+  top: -111%;
+}
+
+section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt .blockchain-border svg {
+  position: absolute;
+  top: -101%;
+  left: -2%;
+}
+
+.ethereumy-content .ethereumy-head {
+  max-width: 535px;
+}
+
+.ethereumy-content .ethereumy-head span {
+  vertical-align: top;
+}
+
+.ethereumy-content .ethereumy-head span img {
+  max-width: 64px;
+  margin-right: 30px;
+}
+
+.ethereumy-content .ethereumy-head h2 span {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.ethereumy-content h3 {
+  font-size: 27px;
+}
+
+.ethereumy-content .ethereumy-row .ethereumy-col img {
+  max-width: 72px;
+}
+
+.ethereumy-content .ethereumy-row .ethereumy-col p {
+  line-height: 1.3;
+  padding-right: 30px;
+}
+
+.tools-sec .tools-content .tools-head {
+  max-width: 600px;
+}
+
+.tools-sec .tools-content .tools-head h2 {
+  font-size: 51px;
+}
+
+.tools-sec .tools-content .tools-head h2 span {
+  font-size: 30px;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col img {
+  max-width: 100px;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col h4 {
+  font-size: 26px;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col a {
+  max-width: 230px;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col a:hover {
+  color: #1E191E;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col-2 {
+  border: 2px solid #393939;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col-2 img {
+  max-width: 35px;
+  margin-right: 10px;
+}
+
+.tools-sec .tools-content .tools-sec-row .tools-col-2 .inner-tools-col p {
+  margin-left: 52px;
+  font-size: 15px;
+}
+
+.public-power-sec .public-power-col-1 h3 {
+  font-size: 32px;
+}
+
+.public-power-sec .public-power-col-1 p {
+  font-size: 15px;
+}
+
+.public-power-sec .public-power-col-2 {
+  background: url(..//..//images/Group-336.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founde-img {
+  max-width: 220px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip {
+  margin: 0 0 -55px 22px;
+  position: relative;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip p {
+  padding: 10px 0 31px 18px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip-1 {
+  background: url(../../images/founder-1-tooltip.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 185px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip-2 {
+  background: url(../../images/founder-2-tooltip.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 185px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip-3 {
+  background: url(../../images/founder-3-tooltip.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 185px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-txt {
+  position: absolute;
+  top: unset;
+  left: unset;
+  right: -33%;
+  bottom: 5%;
+}
+
+.backers-sec .backers-content h3 {
+  font-size: 34px;
+}
+
+.backers-sec .backers-content .backers-row .backer-col {
+  min-height: 140px;
+  border-radius: 8px;
+}
+
+.backers-sec .backers-content .backers-row .backer-col img {
+  max-width: 180px;
+}
+
+.community-sec h3 {
+  font-size: 34px;
+}
+
+.community-sec .community-col img {
+  max-width: 140px;
+}
+
+.community-sec .community-col p {
+  max-width: 303px;
+  line-height: 1.4;
+}
+
+.community-sec .community-col .community-txt .client-name {
+  max-width: 315px;
+  margin-left: auto;
+}
+
+.community-sec .community-col .community-txt .client-name h6 {
+  font-size: 18px;
+}
+
+.community-sec .community-col .community-txt .client-name h6::before {
+  content: '';
+  position: absolute;
+  background: #fff8f8;
+  width: 35px;
+  height: 2px;
+  top: 0;
+  bottom: 0;
+  left: -14%;
+  right: unset;
+  margin: auto;
+}
+
+.join-community-sec {
+  padding: 84px 0;
+}
+
+.join-community-sec .join-community-row .join-community-col h3 {
+  font-size: 44px;
+  color: #000;
+}
+
+.join-community-sec .join-community-row .join-community-col .btn-friendly-2 {
+  border: 1px solid #1E191E;
+}
+
+.join-community-sec .join-community-row .join-community-col .btn-friendly-2:hover {
+  color: #fff8f8;
+}
+
+.blog-sec .blog-head h3 {
+  font-size: 34px;
+}
+
+.blog-sec .blog-head a:hover {
+  color: #FFB600;
+}
+
+.blog-sec .blog-post-container .blog-row .blog-col {
+  border: 1px solid #9A9A9A;
+}
+
+.blog-sec .blog-post-container .blog-row .blog-col h5 {
+  font-size: 22px;
+}
+
+.blog-sec .blog-post-container .blog-row .blog-col-2 {
+  border-color: #FF405E;
+}
+
+.blog-sec .blog-post-container .blog-row .blog-col-2 p.up-event {
+  top: -15px;
+  z-index: 1;
+  padding: 3px 5px;
+}
+
+.newsletter-sec .newsletter-content {
+  max-width: 580px;
+}
+
+.newsletter-sec .newsletter-content h2 {
+  font-size: 50px;
+}
+
+.newsletter-sec .newsletter-content input {
+  height: 60px;
+  border-color: #1E191E !important;
+}
+
+.newsletter-sec .newsletter-content button {
+  width: 100%;
+  max-width: 200px;
+  margin-left: -90px;
+}
+
+footer .footer-sec .footer-row {
+  border-bottom: 1px solid #4A4A4A;
+}
+
+footer .footer-sec .footer-row .footer-col img {
+  max-width: 190px;
+}
+
+footer .footer-sec .footer-row .footer-col a i {
+  font-size: 25px;
+  color: #fff8f8;
+}
+
+footer .footer-sec .footer-row .footer-col ul {
+  list-style: none;
+}
+
+footer .footer-sec .footer-row .footer-col ul li a {
+  margin-bottom: 3px;
+}
+
+footer .footer-sec .footer-row .footer-col ul li a:hover {
+  color: #fff8f8;
+}
+
+footer .footer-sec .footer-row .footer-col ul li a.coin::after {
+  content: '\2197';
+  margin-left: 6px;
+}
+
+footer .footer-sec .footer-bar p {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

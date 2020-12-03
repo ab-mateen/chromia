@@ -1,0 +1,259 @@
+@import 'variables.scss';
+// Bootstrap Container
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1E1E1E;
+    color: #FFF8F8;
+    font-family: 'NBInternational-Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-border {
+    border-radius: $borderoval;
+}
+
+
+/* Font styles */
+
+.font-heading {
+    font-family: 'Battlefin-Black';
+}
+
+.font-main {
+    font-family: $NbRegular;
+}
+
+.font-main-bold {
+    font-family: $NbBold;
+}
+
+.light {
+    font-weight: $light;
+}
+
+.regular {
+    font-weight: $regular;
+}
+
+.medium {
+    font-weight: $medium;
+}
+
+.semibold {
+    font-weight: $semibold;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+.extrabold {
+    font-weight: $extrabold;
+}
+
+// FontSize
+h1 {
+    line-height: 0.9em;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+// Colors
+.bg-cdark {
+    background: $chromia-dark;
+}
+
+.bg-dark-2 {
+    background: $chromia-dark-2;
+}
+
+.bg-light-dark {
+    background: $chromia-light-dark;
+}
+
+.bg-gray {
+    background: $chromia-gray;
+}
+
+.bg-red {
+    background: $chromia-red;
+}
+
+.bg-darkred {
+    background: $chromia-darkred;
+}
+
+.bg-orange {
+    background: $chromia-orange;
+}
+
+.bg-orangedark {
+    background: $chromia-orangedark;
+}
+
+.bg-purple {
+    background: $chromia-purple;
+}
+
+.bg-purpledark {
+    background: $chromia-purpledark;
+}
+
+.bg-pink {
+    background: $chromia-pink;
+}
+
+.bg-pinkdark {
+    background: $chromia-darkpink;
+}
+
+.bg-yellow {
+    background: $chromia-yellow;
+}
+
+.bg-yellowdark {
+    background: $chromia-yellowdark;
+}
+
+.bg-offwhite {
+    background: $chromia-offwhite;
+}
+
+.text-cdark {
+    color: $chromia-dark;
+}
+
+.text-gray {
+    color: $chromia-gray;
+}
+
+.text-red {
+    color: $chromia-red;
+}
+
+.text-red-dark {
+    color: $chromia-darkred;
+}
+
+.text-orange {
+    color: $chromia-orange;
+}
+
+.text-orange-dark {
+    color: $chromia-orangedark;
+}
+
+.text-purple {
+    color: $chromia-purple;
+}
+
+.text-purple-dark {
+    color: $chromia-purpledark;
+}
+
+.text-pink {
+    color: $chromia-pink;
+}
+
+.text-pink-dark {
+    color: $chromia-darkpink;
+}
+
+.text-yellow {
+    color: $chromia-yellow;
+}
+
+.text-yellow-dark {
+    color: $chromia-yellowdark;
+}
+
+.text-offwhite {
+    color: $chromia-offwhite;
+}
+
+.text-white-dark {
+    color: $chromia-offwhitedark;
+}
+
+
+/* Opacity */
+
+.op- {
+    &0 {
+        opacity: 0;
+    }
+    &1 {
+        opacity: 0.1;
+    }
+    &2 {
+        opacity: 0.2;
+    }
+    &3 {
+        opacity: 0.3;
+    }
+    &4 {
+        opacity: 0.4;
+    }
+    &5 {
+        opacity: 0.5;
+    }
+    &6 {
+        opacity: 0.6;
+    }
+    &7 {
+        opacity: 0.7;
+    }
+    &8 {
+        opacity: 0.8;
+    }
+    &9 {
+        opacity: 0.9;
+    }
+    &10 {
+        opacity: 1;
+    }
+}
