@@ -416,8 +416,9 @@ section.blockchain-sec {
         }
     }
     .public-power-col-2 {
-        background: url(..//..//images/Group-336.png) no-repeat;
-        background-size: 100% 100%;
+        background: url(../../images/img-elements.png) no-repeat;
+        background-size: 123% 103%;
+        background-position-x: 25px;
         .public-power-col-2-row {
             .founde-img {
                 max-width: 220px;
@@ -450,7 +451,76 @@ section.blockchain-sec {
                 left: unset;
                 right: -33%;
                 bottom: 5%;
+                width: fit-content;
+                margin: 8px auto;
             }
+            .founder-popup-container {
+                width: 187%;
+                position: absolute;
+                top: 32px;
+                bottom: 0;
+                right: 0;
+                left: 265px;
+                margin: auto;
+                z-index: 1;
+                transition: .3s;
+                display: none;
+                .popup {
+                    .popup-dialog {
+                        &::before {
+                            content: url(../../images/popup-shape.png);
+                            position: absolute;
+                            top: 65px;
+                            left: -30px;
+                        }
+                        .popup-head {
+                            border-top-left-radius: 7px;
+                            border-top-right-radius: 7px;
+                            button {
+                                border: none;
+                                outline: 0;
+                                &:hover {
+                                    color: $chromia-offwhite;
+                                    opacity: 1 !important;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        .popup-content {
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .founder-popup-container-2,
+            .founder-popup-container-3 {
+                left: -710px;
+                .popup {
+                    .popup-dialog {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .modal {
+        .modal-dialog {
+            max-width: 415px;
+            height: fit-content;
+            /* margin: auto; */
+            top: 210px;
+            bottom: 0;
+            left: 294px;
+            right: 0;
         }
     }
 }

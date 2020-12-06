@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="Bootstrap Plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="Bootstrap Plugins/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <title>Chromia Web</title>
 </head>
 
@@ -484,7 +485,7 @@
                             company since always, and will not be controlling Chromia which is a true decentralized platform.</p>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 position-relative">
                     <div class="public-power-col public-power-col-2 h-100">
                         <div class="public-power-col-2-row d-flex justify-content-between h-100">
                             <div class="col-sm-4 d-flex justify-content-center align-items-center">
@@ -492,18 +493,44 @@
                                     <div class="public-power-inner-content position-relative">
                                         <div class="founder-tooltip founder-tooltip-1">
                                             <p class="font-main-bold d-inline-block mr-2">Did you know...</p>
-                                            <button class="btn btn-tooltiop d-inline-block"><i class="fas fa-chevron-down text-offwhite"></i></button>
+                                            <button class="btn btn-tooltip-1 d-inline-block" type="button"><i class="fas fa-chevron-down text-offwhite"></i></button>
                                         </div>
+
 
                                         <div class="founder-img">
                                             <picture>
                                                 <img src="images/founder-1.png" alt="">
                                             </picture>
                                         </div>
-                                        <div class="founder-txt">
+                                        <!-- Start Founder Popup -->
+                                        <div class="founder-popup-container founder-popup-container-1">
+                                            <!-- The Modal -->
+                                            <div class="popup" id="founder-popup">
+                                                <div class="popup-dialog">
+                                                    <div class="popup-content bg-transparent">
+                                                        <div class="popup-head px-4 py-3 bg-red d-flex justify-content-between">
+                                                            <p class="font-main-bold p-0">Did you know...</p>
+                                                            <button type="button" class="close d-block text-offwhite">&times;</button>
+                                                        </div>
+                                                        <!-- Modal body -->
+                                                        <div class="popup-body p-0">
+                                                            <div class="popup-content bg-darkred px-4 py-3">
+                                                                <h5 class="font-main-bold mb-3">Pioneers of Blockchain</h5>
+                                                                <p class="p-0">Chromia is the brainchild of ChromaWay, a pioneering blockchain company. Back in 2012, Alex Mizrahi the CTO started working together on what can be called the first implementation of user-defined
+                                                                    assets on a blockchain, called colored coins. This creation was absolutely revolutionary. We are sure you have heard about tokens.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Modal -->
+                                            </div>
+                                        </div>
+                                        <!-- End Founder Popup -->
+                                        <div class="founder-txt founder-txt-1">
                                             <h5 class="font-weight-normal">Or Perelman</h5>
                                             <p>Co-founder & COO</p>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -513,7 +540,7 @@
                                         <div class="public-power-inner-content position-relative">
                                             <div class="founder-tooltip founder-tooltip-2">
                                                 <p class="font-main-bold d-inline-block mr-2">Did you know...</p>
-                                                <button class="btn btn-tooltiop d-inline-block"><i class="fas fa-chevron-down text-offwhite"></i></button>
+                                                <button class="btn btn-tooltip-2 d-inline-block"><i class="fas fa-chevron-down text-offwhite"></i></button>
                                             </div>
 
                                             <div class="founder-img">
@@ -521,7 +548,31 @@
                                                     <img src="images/founder-2.png" alt="">
                                                 </picture>
                                             </div>
-                                            <div class="founder-txt">
+                                            <!-- Start Founder Popup -->
+                                            <div class="founder-popup-container founder-popup-container-2">
+                                                <!-- The Modal -->
+                                                <div class="popup" id="founder-popup">
+                                                    <div class="popup-dialog">
+                                                        <div class="popup-content bg-transparent">
+                                                            <div class="popup-head px-4 py-3 bg-pink d-flex justify-content-between">
+                                                                <p class="font-main-bold p-0">Did you know...</p>
+                                                                <button type="button" class="close d-block text-offwhite">&times;</button>
+                                                            </div>
+                                                            <!-- Modal body -->
+                                                            <div class="popup-body p-0">
+                                                                <div class="popup-content bg-pinkdark px-4 py-3">
+                                                                    <h5 class="font-main-bold mb-3">Pioneers of Blockchain</h5>
+                                                                    <p class="p-0">Chromia is the brainchild of ChromaWay, a pioneering blockchain company. Back in 2012, Alex Mizrahi the CTO started working together on what can be called the first implementation of
+                                                                        user-defined assets on a blockchain, called colored coins. This creation was absolutely revolutionary. We are sure you have heard about tokens.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Modal -->
+                                                </div>
+                                            </div>
+                                            <!-- End Founder Popup -->
+                                            <div class="founder-txt founder-txt-2">
                                                 <h5 class="font-weight-normal">Henrik Hjelte</h5>
                                                 <p>Co-founder & CTO</p>
                                             </div>
@@ -531,7 +582,7 @@
                                         <div class="public-power-inner-content position-relative">
                                             <div class="founder-tooltip founder-tooltip-3">
                                                 <p class="font-main-bold d-inline-block mr-2">Did you know...</p>
-                                                <button class="btn btn-tooltiop d-inline-block"><i class="fas fa-chevron-down text-offwhite"></i></button>
+                                                <button class="btn btn-tooltip-3 d-inline-block"><i class="fas fa-chevron-down text-offwhite"></i></button>
                                             </div>
 
                                             <div class="founder-img">
@@ -539,7 +590,31 @@
                                                     <img src="images/founder-3.png" alt="">
                                                 </picture>
                                             </div>
-                                            <div class="founder-txt">
+                                            <!-- Start Founder Popup -->
+                                            <div class="founder-popup-container founder-popup-container-3">
+                                                <!-- The Modal -->
+                                                <div class="popup" id="founder-popup">
+                                                    <div class="popup-dialog">
+                                                        <div class="popup-content bg-transparent">
+                                                            <div class="popup-head px-4 py-3 bg-purple d-flex justify-content-between">
+                                                                <p class="font-main-bold p-0">Did you know...</p>
+                                                                <button type="button" class="close d-block text-offwhite">&times;</button>
+                                                            </div>
+                                                            <!-- Modal body -->
+                                                            <div class="popup-body p-0">
+                                                                <div class="popup-content bg-purpledark px-4 py-3">
+                                                                    <h5 class="font-main-bold mb-3">Pioneers of Blockchain</h5>
+                                                                    <p class="p-0">Chromia is the brainchild of ChromaWay, a pioneering blockchain company. Back in 2012, Alex Mizrahi the CTO started working together on what can be called the first implementation of
+                                                                        user-defined assets on a blockchain, called colored coins. This creation was absolutely revolutionary. We are sure you have heard about tokens.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Modal -->
+                                                </div>
+                                            </div>
+                                            <!-- End Founder Popup -->
+                                            <div class="founder-txt founder-txt-3">
                                                 <h5 class="font-weight-normal">Alec Mizrahi</h5>
                                                 <p>Co-founder & CTO</p>
                                             </div>
@@ -879,12 +954,13 @@
     </footer>
     <!-- End Footer Section -->
     <!-- Scripts -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script> -->
-    <script src="Bootstrap Plugins/jquery.min.js "></script>
+    <!-- <script src="Bootstrap Plugins/jquery.min.js "></script>
     <script src="Bootstrap Plugins/popper.min.js "></script>
-    <script src="Bootstrap Plugins/Bootstrap.min.js "></script>
+    <script src="Bootstrap Plugins/Bootstrap.min.js "></script> -->
+    <script src="assets/js/main.js"></script>
     </head>
 </body>
 

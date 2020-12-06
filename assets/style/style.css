@@ -749,8 +749,9 @@ section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt
 }
 
 .public-power-sec .public-power-col-2 {
-  background: url(..//..//images/Group-336.png) no-repeat;
-  background-size: 100% 100%;
+  background: url(../../images/img-elements.png) no-repeat;
+  background-size: 123% 103%;
+  background-position-x: 25px;
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founde-img {
@@ -790,6 +791,80 @@ section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt
   left: unset;
   right: -33%;
   bottom: 5%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 8px auto;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container {
+  width: 187%;
+  position: absolute;
+  top: 32px;
+  bottom: 0;
+  right: 0;
+  left: 265px;
+  margin: auto;
+  z-index: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: none;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog::before {
+  content: url(../../images/popup-shape.png);
+  position: absolute;
+  top: 65px;
+  left: -30px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog .popup-head {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog .popup-head button {
+  border: none;
+  outline: 0;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog .popup-head button:hover {
+  color: #fff8f8;
+  opacity: 1 !important;
+  text-decoration: none;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog .popup-content {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog .popup-content p {
+  font-size: 15px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2,
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 {
+  left: -710px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2 .popup .popup-dialog::before,
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 .popup .popup-dialog::before {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .modal .modal-dialog {
+    max-width: 415px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    /* margin: auto; */
+    top: 210px;
+    bottom: 0;
+    left: 294px;
+    right: 0;
+  }
 }
 
 .backers-sec .backers-content h3 {
