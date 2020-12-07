@@ -310,6 +310,8 @@ section.blockchain-sec {
                         top: -111%;
                         // left: -340px;
                         // top: -309px;
+                        width: 320px;
+                        height: 500px;
                     }
                 }
                 .blockchain-border {
@@ -319,6 +321,8 @@ section.blockchain-sec {
                         // left: -11px;
                         top: -101%;
                         left: -2%;
+                        height: 373px;
+                        width: 555px;
                     }
                 }
             }
@@ -496,13 +500,36 @@ section.blockchain-sec {
                     }
                 }
             }
-            .founder-popup-container-2,
-            .founder-popup-container-3 {
-                left: -710px;
+            .founder-popup-container-2 {
+                left: -730px;
+                top: 15px;
                 .popup {
                     .popup-dialog {
                         &::before {
                             display: none;
+                        }
+                        &::after {
+                            content: url(../../images/popup-shape-2.png);
+                            position: absolute;
+                            top: 65px;
+                            right: -30px;
+                        }
+                    }
+                }
+            }
+            .founder-popup-container-3 {
+                left: -730px;
+                top: 15px;
+                .popup {
+                    .popup-dialog {
+                        &::before {
+                            display: none;
+                        }
+                        &::after {
+                            content: url(../../images/popup-shape-3.png);
+                            position: absolute;
+                            top: 65px;
+                            right: -30px;
                         }
                     }
                 }

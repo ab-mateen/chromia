@@ -34,8 +34,6 @@ $chromia-offwhite:#fff8f8;
 $chromia-offwhitedark:#f5eeee;
 // Chromia Logo Pink
 $chromia-logo-pink: #FFB0C2;
-// Border oval
-$borderoval: 30px;
 // Fonts
 $NbLight: 'NBInternational-Light';
 $NbRegular: 'NBInternational-Regular';
@@ -55,3 +53,14 @@ $font-heading: 'Battlefin-Blk'; //DM Sans;
 $font-main: 'NB International'; //DM Sans;
 $font_heading_weight: 700;
 $font_main_weight: 400;
+// Border oval
+$borderoval: 30px;
+// padding margin parameters for Responsive
+$spacemd: 60px;
+$spacesecmd: 30px;
+$spacesm: 30px;
+// Fonts Size Responsive
+$font-head-sm: 30px;
+$font-head2-sm: 20px;
+$font-main-sm2: 18px;
+$font-main-sm: 14px;

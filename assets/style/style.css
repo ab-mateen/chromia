@@ -657,12 +657,16 @@ section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt
   position: absolute;
   left: -78%;
   top: -111%;
+  width: 320px;
+  height: 500px;
 }
 
 section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt .blockchain-border svg {
   position: absolute;
   top: -101%;
   left: -2%;
+  height: 373px;
+  width: 555px;
 }
 
 .ethereumy-content .ethereumy-head {
@@ -843,14 +847,36 @@ section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt
   font-size: 15px;
 }
 
-.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2,
-.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 {
-  left: -710px;
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2 {
+  left: -730px;
+  top: 15px;
 }
 
-.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2 .popup .popup-dialog::before,
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2 .popup .popup-dialog::before {
+  display: none;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2 .popup .popup-dialog::after {
+  content: url(../../images/popup-shape-2.png);
+  position: absolute;
+  top: 65px;
+  right: -30px;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 {
+  left: -730px;
+  top: 15px;
+}
+
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 .popup .popup-dialog::before {
   display: none;
+}
+
+.public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 .popup .popup-dialog::after {
+  content: url(../../images/popup-shape-3.png);
+  position: absolute;
+  top: 65px;
+  right: -30px;
 }
 
 @media (min-width: 576px) {
