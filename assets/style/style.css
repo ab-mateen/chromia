@@ -97,6 +97,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  .blockchain-container.container {
+    max-width: 1024px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -350,6 +356,184 @@ h5 {
 
 .op-10 {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .md-pt {
+    padding-top: 20px !important;
+  }
+  .md-pb {
+    padding-bottom: 20px !important;
+  }
+  .md-pl {
+    padding-left: 20px !important;
+  }
+  .md-pr {
+    padding-right: 20px !important;
+  }
+  .md-py {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .md-px {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .md-pt2 {
+    padding-top: 30px !important;
+  }
+  .md-pb2 {
+    padding-bottom: 30px !important;
+  }
+  .md-pl2 {
+    padding-left: 30px !important;
+  }
+  .md-pr2 {
+    padding-right: 30px !important;
+  }
+  .md-py2 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .md-px2 {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  .md-mt {
+    margin-top: 20px !important;
+  }
+  .md-mb {
+    margin-bottom: 20px !important;
+  }
+  .md-ml {
+    margin-left: 20px !important;
+  }
+  .md-mr {
+    margin-left: 20px !important;
+  }
+  .md-my {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .md-mx {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .md-mt2 {
+    margin-top: 30px !important;
+  }
+  .md-mb2 {
+    margin-bottom: 30px !important;
+  }
+  .md-ml2 {
+    margin-left: 30px !important;
+  }
+  .md-mr2 {
+    margin-left: 30px !important;
+  }
+  .md-my2 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .md-mx2 {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+  .md-pt0 {
+    padding-top: 0 !important;
+  }
+  .md-pb0 {
+    padding-bottom: 0 !important;
+  }
+  .md-pr0 {
+    padding-right: 0 !important;
+  }
+  .md-pl0 {
+    padding-left: 0 !important;
+  }
+  .md-py0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .md-px0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .md-mt0 {
+    margin-top: 0 !important;
+  }
+  .md-mb0 {
+    margin-bottom: 0 !important;
+  }
+  .md-ml0 {
+    margin-left: 0 !important;
+  }
+  .md-mr0 {
+    margin-right: 0 !important;
+  }
+  .md-mx0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .md-my0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 595px) {
+  .sm-font-head {
+    font-size: 28px !important;
+  }
+  .sm-font-head2 {
+    font-size: 20px !important;
+  }
+  .sm-font-main2 {
+    font-size: 18px !important;
+  }
+  .sm-font-main {
+    font-size: 14px !important;
+  }
+  .sm-pt {
+    padding-top: 30px !important;
+  }
+  .sm-pb {
+    padding-bottom: 30px !important;
+  }
+  .sm-pl {
+    padding-left: 30px !important;
+  }
+  .sm-pr {
+    padding-right: 30px !important;
+  }
+  .sm-py {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .sm-px {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .sm-mt {
+    margin-top: 30px !important;
+  }
+  .sm-mb {
+    margin-bottom: 30px !important;
+  }
+  .sm-ml {
+    margin-left: 30px !important;
+  }
+  .sm-mr {
+    margin-right: 30px !important;
+  }
+  .sm-my {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .sm-mx {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
 }
 
 header .header-lang-bar .lang-bar-content {
@@ -659,6 +843,7 @@ section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt
   top: -111%;
   width: 320px;
   height: 500px;
+  z-index: -1;
 }
 
 section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt .blockchain-border svg {
@@ -667,6 +852,7 @@ section.blockchain-sec .blockchain-content .blockhain-row .blockchain-scndry-txt
   left: -2%;
   height: 373px;
   width: 555px;
+  z-index: -1;
 }
 
 .ethereumy-content .ethereumy-head {
@@ -1035,5 +1221,124 @@ footer .footer-sec .footer-row .footer-col ul li a.coin::after {
 
 footer .footer-sec .footer-bar p {
   font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+  section.banner-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .blockchain-border svg {
+    top: -94% !important;
+    left: -7% !important;
+    height: 370px !important;
+  }
+  .relational-border svg {
+    left: -84% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 999px) {
+  .relational-border svg {
+    top: -103% !important;
+  }
+  .blockchain-border svg {
+    top: -88% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .blockchain-scndry-txt {
+    width: 52% !important;
+  }
+  .relational-border svg {
+    left: -93% !important;
+    top: -103% !important;
+  }
+  .blockchain-border svg {
+    top: -77% !important;
+    left: -15% !important;
+    -webkit-transform: scale(0.77);
+            transform: scale(0.77);
+  }
+}
+
+@media (max-width: 768px) {
+  .relational-border svg,
+  .blockchain-border svg {
+    display: none !important;
+  }
+  .blockchain-scndry-txt {
+    width: 100% !important;
+  }
+  .col-md-4.power-public-col-main {
+    -webkit-box-pack: unset !important;
+        -ms-flex-pack: unset !important;
+            justify-content: unset !important;
+  }
+  .public-power-inner-col {
+    max-width: 220px !important;
+    margin-right: auto;
+  }
+  .h-100 {
+    height: auto !important;
+  }
+  .founder-popup-container {
+    width: 159% !important;
+    top: -32px !important;
+  }
+  .founder-popup-container-2,
+  .founder-popup-container-3 {
+    left: 265px !important;
+  }
+  .founder-popup-container-2 .popup-dialog::after,
+  .founder-popup-container-3 .popup-dialog::after {
+    display: none !important;
+  }
+  .founder-popup-container-2 .popup-dialog::before {
+    content: url(../../images/popup-shape-2-md.png) !important;
+    display: inline-block !important;
+  }
+  .founder-popup-container-3 .popup-dialog::before {
+    content: url(../../images/popup-shape-3-md.png) !important;
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 595px) {
+  .container {
+    padding: 0 20px;
+  }
+  .blog-head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .founder-popup-container,
+  .founder-popup-container-2,
+  .founder-popup-container-3 {
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+  }
+  .founder-popup-container::before,
+  .founder-popup-container-2::before,
+  .founder-popup-container-3::before {
+    display: none !important;
+  }
+  .blockchain-col-txt p {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .blockchain-col-img {
+    top: -5% !important;
+    right: 4% !important;
+    max-width: 95px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

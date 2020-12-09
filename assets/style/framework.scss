@@ -6,6 +6,12 @@
     }
 }
 
+@media (min-width: 992px) {
+    .blockchain-container.container {
+        max-width: 1024px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -255,5 +261,192 @@ h5 {
     }
     &10 {
         opacity: 1;
+    }
+}
+
+// Responsive FrameWork
+// For Tablet Devices
+@media (max-width: 768px) {
+    // Margin Padding for Tablet Devices
+    // PAdding 1
+    .md-pt {
+        padding-top: $spacemd !important;
+    }
+    .md-pb {
+        padding-bottom: $spacemd !important;
+    }
+    .md-pl {
+        padding-left: $spacemd !important;
+    }
+    .md-pr {
+        padding-right: $spacemd !important;
+    }
+    .md-py {
+        padding-top: $spacemd !important;
+        padding-bottom: $spacemd !important;
+    }
+    .md-px {
+        padding-right: $spacemd !important;
+        padding-left: $spacemd !important;
+    }
+    // PAdding 2
+    .md-pt2 {
+        padding-top: $spacesecmd !important;
+    }
+    .md-pb2 {
+        padding-bottom: $spacesecmd !important;
+    }
+    .md-pl2 {
+        padding-left: $spacesecmd !important;
+    }
+    .md-pr2 {
+        padding-right: $spacesecmd !important;
+    }
+    .md-py2 {
+        padding-top: $spacesecmd !important;
+        padding-bottom: $spacesecmd !important;
+    }
+    .md-px2 {
+        padding-right: $spacesecmd !important;
+        padding-left: $spacesecmd !important;
+    }
+    // Margin
+    .md-mt {
+        margin-top: $spacemd !important;
+    }
+    .md-mb {
+        margin-bottom: $spacemd !important;
+    }
+    .md-ml {
+        margin-left: $spacemd !important;
+    }
+    .md-mr {
+        margin-left: $spacemd !important;
+    }
+    .md-my {
+        margin-top: $spacemd !important;
+        margin-bottom: $spacemd !important;
+    }
+    .md-mx {
+        margin-left: $spacemd !important;
+        margin-right: $spacemd !important;
+    }
+    .md-mt2 {
+        margin-top: $spacesecmd !important;
+    }
+    .md-mb2 {
+        margin-bottom: $spacesecmd !important;
+    }
+    .md-ml2 {
+        margin-left: $spacesecmd !important;
+    }
+    .md-mr2 {
+        margin-left: $spacesecmd !important;
+    }
+    .md-my2 {
+        margin-top: $spacesecmd !important;
+        margin-bottom: $spacesecmd !important;
+    }
+    .md-mx2 {
+        margin-left: $spacesecmd !important;
+        margin-right: $spacesecmd !important;
+    }
+    .md-pt0 {
+        padding-top: 0 !important;
+    }
+    .md-pb0 {
+        padding-bottom: 0 !important;
+    }
+    .md-pr0 {
+        padding-right: 0 !important;
+    }
+    .md-pl0 {
+        padding-left: 0 !important;
+    }
+    .md-py0 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .md-px0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .md-mt0 {
+        margin-top: 0 !important;
+    }
+    .md-mb0 {
+        margin-bottom: 0 !important;
+    }
+    .md-ml0 {
+        margin-left: 0 !important;
+    }
+    .md-mr0 {
+        margin-right: 0 !important;
+    }
+    .md-mx0 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .md-my0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+// For Mobile Devices
+@media (max-width: 595px) {
+    // Font Sizes For Mobile Devices
+    .sm-font-head {
+        font-size: $font-head-sm !important;
+    }
+    .sm-font-head2 {
+        font-size: $font-head2-sm !important;
+    }
+    .sm-font-main2 {
+        font-size: $font-main-sm2 !important;
+    }
+    .sm-font-main {
+        font-size: $font-main-sm !important;
+    }
+    // Padding, Margin for Mobile Devices
+    .sm-pt {
+        padding-top: $spacesm !important;
+    }
+    .sm-pb {
+        padding-bottom: $spacesm !important;
+    }
+    .sm-pl {
+        padding-left: $spacesm !important;
+    }
+    .sm-pr {
+        padding-right: $spacesm !important;
+    }
+    .sm-py {
+        padding-top: $spacesm !important;
+        padding-bottom: $spacesm !important;
+    }
+    .sm-px {
+        padding-left: $spacesm !important;
+        padding-right: $spacesm !important;
+    }
+    .sm-mt {
+        margin-top: $spacesm !important;
+    }
+    .sm-mb {
+        margin-bottom: $spacesm !important;
+    }
+    .sm-ml {
+        margin-left: $spacesm !important;
+    }
+    .sm-mr {
+        margin-right: $spacesm !important;
+    }
+    .sm-my {
+        margin-top: $spacesm !important;
+        margin-bottom: $spacesm !important;
+    }
+    .sm-mx {
+        margin-left: $spacesm !important;
+        margin-right: $spacesm !important;
     }
 }
