@@ -3,6 +3,29 @@
 @import 'framework.scss';
 // Header Style
 header {
+    // Chromia Alert
+    .chromia-alert-container {
+        .alert {
+            border-radius: 0;
+            button {
+                color: $chromia-dark !important;
+                outline: 0;
+                opacity: 1;
+                text-shadow: none;
+                font-weight: 400;
+                font-size: 14px;
+                height: 100%;
+            }
+            p {
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: $chromia-dark;
+                    }
+                }
+            }
+        }
+    }
     // Header Language Bar
     .header-lang-bar {
         .lang-bar-content {
@@ -24,6 +47,9 @@ header {
                             color: $chromia-offwhite;
                             transition: .2s;
                         }
+                    }
+                    &:hover.dropdown-menu {
+                        display: block !important;
                     }
                 }
             }
@@ -104,6 +130,46 @@ section.services-sec {
         p {
             font-family: $NbRegular;
             max-width: 320px;
+            &:after {
+                content: 'Rell is 7 times more compact than SQL';
+                background-image: url(../../images/serv-tooltip.png);
+                background-size: 100% 100%;
+                max-width: 162px;
+                padding: 13px 11px 4px;
+                display: none;
+                position: absolute;
+                top: unset;
+                bottom: -65px;
+                left: 30px;
+            }
+            &:hover::after {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Chromia Slider section
+section.chromia-slider-sec {
+    .slider-content {
+        .slider-col {
+            h4 {
+                a {
+                    &::after {
+                        content: '\2197';
+                        margin-left: 6px;
+                        color: #C7C7C7;
+                    }
+                }
+            }
+            p {
+                color: #C7C7C7;
+                font-size: 15px;
+            }
+        }
+        .slider-navigation {
+            margin-left: auto;
+            max-width: 1120px;
         }
     }
 }
@@ -111,6 +177,8 @@ section.services-sec {
 // BlockChain Section
 section.blockchain-sec {
     .blockchain-content {
+        background: url(../../images/blocchain-head-bg.png) no-repeat;
+        background-size: 100%;
         .blockchain-head {
             max-width: 580px;
             h2 {
@@ -126,15 +194,29 @@ section.blockchain-sec {
         }
         .blockchain-text {
             max-width: 470px;
-            p {
+            span {
                 font-family: $NbBold;
-                font-size: 26px;
+                font-size: 20px;
+            }
+            .span-1 {
+                border: 1px solid $chromia-pink;
+                border-radius: 10px;
+                background: #53384A;
+            }
+            .span-2 {
+                border: 1px solid $chromia-purple;
+                border-radius: 10px;
+                background: #411D41;
+            }
+            .span-3 {
+                border-radius: 10px;
+                background: $chromia-red;
             }
         }
         .blockhain-row {
             max-width: 1040px;
             padding-top: 100px;
-            border-bottom: 1px solid rgba(255, 248, 248, 0.4);
+            // border-bottom: 1px solid rgba(255, 248, 248, 0.4);
             .blockchain-col-1 {
                 border: 2px solid $chromia-pink;
                 border-radius: 7px;
@@ -321,7 +403,7 @@ section.blockchain-sec {
                         // top: -280px;
                         // left: -11px;
                         top: -101%;
-                        left: -2%;
+                        left: 3%;
                         height: 384px;
                         width: 555px;
                         z-index: -1;
@@ -334,6 +416,8 @@ section.blockchain-sec {
 
 // Plays with Ethereumy Section
 .ethereumy-content {
+    border-top: 1px solid #414141;
+    border-bottom: 1px solid #414141;
     .ethereumy-head {
         max-width: 535px;
         span {
@@ -354,13 +438,36 @@ section.blockchain-sec {
         font-size: 27px;
     }
     .ethereumy-row {
-        .ethereumy-col {
-            img {
-                max-width: 72px;
-            }
+        .ethereumy-col-content {
             p {
-                line-height: 1.3;
-                padding-right: 30px;
+                max-width: 550px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+// Enterprise Blockchain Section
+section.enterprise-sec {
+    .enterprise-content {
+        .enterprise-head {
+            max-width: 720px;
+            margin: auto;
+            h2 {
+                font-size: 52px;
+            }
+        }
+        .enterprise-row {
+            max-width: 870px;
+            margin: auto;
+            .enterprise-col {
+                .enterprise-col-img {
+                    img {
+                        margin: auto;
+                        max-width: 260px;
+                        display: block;
+                    }
+                }
             }
         }
     }

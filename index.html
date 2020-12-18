@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="Bootstrap Plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Chromia Web</title>
 </head>
@@ -15,6 +17,15 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- Start Chromia Alert Container -->
+        <div class="chromia-alert-container container-fluid px-0">
+            <!-- Start Chromia Alert -->
+            <div class="alert bg-purple alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">Close</button>
+                <p class="text-cdark text-center sm-font-main"><span class="font-main-bold font-weight-bold">Do you hold CHR?</span> Now you can stake them! <a href="#" class="text-cdark font-main-bold">Read More</a></p>
+            </div>
+            <!-- End Chromia Alert -->
+        </div>
         <!-- Language Bar -->
         <div class="header-lang-bar pt-3">
             <div class="lang-bar-container container">
@@ -25,12 +36,12 @@
                         </div>
                         <div class="lang-jap lang-col lang-col">
                             <picture>
-                                <img src="images/lang-japan.png" alt="Japan Flag">
+                                <a href="#"><img src="images/lang-japan.png" alt="Japan Flag"></a>
                             </picture>
                         </div>
                         <div class="lang-chi lang-col lang-col">
                             <picture>
-                                <img src="images/lang-china.png" alt="Japan Flag">
+                                <a href="#"><img src="images/lang-china.png" alt="Japan Flag"></a>
                             </picture>
                         </div>
                     </div>
@@ -141,11 +152,11 @@
                         <div class="services-col services-col-1">
                             <div class="services-col-img">
                                 <picture>
-                                    <img src="images/ellipse.png " alt="White Ellipse">
+                                    <img src="images/service-col-1.png" alt="small rocket">
                                 </picture>
                             </div>
                             <h4 class="my-4 font-weight-bold sm-font-head2">Deliver Faster</h4>
-                            <p class="sm-font-main">Code seven to ten times faster.</p>
+                            <p class="sm-font-main position-relative">Code seven to ten times faster.</p>
                         </div>
                     </div>
                     <!-- End services Col 1-->
@@ -154,11 +165,11 @@
                         <div class="services-col services-col-2">
                             <div class="services-col-img">
                                 <picture>
-                                    <img src="images/ellipse-2.png" alt="White Ellipse">
+                                    <img src="images/service-col-2.png" alt="three boxes">
                                 </picture>
                             </div>
                             <h4 class="my-4 font-weight-bold sm-font-head2">Unique Architecture</h4>
-                            <p class="sm-font-main">Chromia is both a blockchain and a relational database.</p>
+                            <p class="sm-font-main position-relative">Chromia is both a blockchain and a relational database.</p>
                         </div>
                     </div>
                     <!-- End Services Col 2 -->
@@ -167,11 +178,11 @@
                         <div class="services-col services-col-2 services-col-3 ">
                             <div class="services-col-img ">
                                 <picture>
-                                    <img src="images/ellipse-3.png " alt="White Ellipse ">
+                                    <img src="images/service-col-3.png" alt="cube">
                                 </picture>
                             </div>
                             <h4 class="my-4 font-weight-bold sm-font-head2">Plays well with Ethereumy</h4>
-                            <p class="sm-font-main">Chromia is an independent Layer One, or a Layer Two to ship fast things faster.</p>
+                            <p class="sm-font-main position-relative">Chromia is an independent Layer One, or a Layer Two to ship fast things faster.</p>
                         </div>
                     </div>
                     <!-- End Services Col 3 -->
@@ -182,11 +193,455 @@
         <!-- End services Container -->
     </section>
     <!-- End services Section -->
+    <!-- Start Slider Section -->
+    <section class="chromia-slider-sec">
+        <!-- Start Chromia Slider No 1 -->
+        <div class="slider-content slider-content-1 bg-light-dark py-5 md-py2">
+            <div class="chromia-slider-container container">
+                <div class="chromia-slider-1">
+                    <div class="slider-col slider-col-2">
+                        <div class="slider-col-head mb-2">
+                            <h3 class="font-heading sm-font-head">Chromia for Games</h3>
+                        </div>
+                        <div class="chromia-slider owl-carousel owl-theme">
+                            <!-- Start Slider Item 1 -->
+                            <div class="item" data-hash="slider1img1">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-1.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 1 -->
+                            <!-- Start Slider Item 2 -->
+                            <div class="item" data-hash="slider1img2">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-3.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Mined of Dalarnia</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 2 -->
+                            <!-- Start Slider Item 3 -->
+                            <div class="item" data-hash="slider1img3">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-4.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Krystopia 2</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 3 -->
+                            <!-- Start Slider Item 4 -->
+                            <div class="item" data-hash="slider1img4">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-5.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">My Neighbor Alice</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 4 -->
+                        </div>
+                        <!-- Start Slider Nav Images for Slider 1 -->
+                        <div class="slider-navigation d-flex justify-content-between mt-3">
+                            <a href="#slider1img1" class="d-inline-block mr-3"><img src="images/chromia-slider-img11-.png" alt=""></a>
+                            <a href="#slider1img2" class="d-inline-block mr-3"><img src="images/chromia-slider-img-3.png" alt=""></a>
+                            <a href="#slider1img3" class="d-inline-block mr-3"><img src="images/chromia-slider-img-4.png" alt=""></a>
+                            <a href="#slider1img4" class="d-inline-block"><img src="images/chromia-slider-img-5.png" alt=""></a>
+                        </div>
+                        <!-- End Slider Nav Images for Slider 1 -->
+                    </div>
+                </div>
+                <!-- End Chromia Slider No 1 -->
+            </div>
+        </div>
+        <!-- Start Chromia Slider No 2 -->
+        <div class="slider-content slider-content-2 py-5 md-py2">
+            <div class="chromia-slider-container container">
+                <div class="chromia-slider-2">
+                    <div class="slider-col slider-col-2">
+                        <div class="slider-col-head mb-2">
+                            <h3 class="font-heading sm-font-head">Chromia for Enterprise</h3>
+                        </div>
+                        <div class="chromia-slider owl-carousel owl-theme">
+                            <!-- Start Slider Item 1 -->
+                            <div class="item" data-hash="slider2img1">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-1.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 1 -->
+                            <!-- Start Slider Item 2 -->
+                            <div class="item" data-hash="slider2img2">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-2.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 2 -->
+                            <!-- Start Slider Item 3 -->
+                            <div class="item" data-hash="slider2img3">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-2.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 3 -->
+                        </div>
+                        <!-- Start Slider Nav Images for Slider 2 -->
+                        <div class="slider-navigation d-flex justify-content-between mt-3">
+                            <a href="#slider2img1" class="d-inline-block mr-3"><img src="images/chromia-slider-img11-.png" alt=""></a>
+                            <a href="#slider2img2" class="d-inline-block mr-3"><img src="images/chromia-slider-img-2.png" alt=""></a>
+                            <a href="#slider2img3" class="d-inline-block"><img src="images/chromia-slider-img-2.png" alt=""></a>
+                        </div>
+                        <!-- End Slider Nav Images 2 -->
+                    </div>
+                </div>
+                <!-- End Chromia Slider No 2 -->
+            </div>
+        </div>
+        <!-- Start Chromia Slider No 3 -->
+        <div class="slider-content slider-content-3 bg-light-dark py-5 md-py2">
+            <div class="chromia-slider-container container">
+                <div class="chromia-slider-3">
+                    <div class="slider-col slider-col-2">
+                        <div class="slider-col-head mb-2">
+                            <h3 class="font-heading sm-font-head">Chromia for DeFi</h3>
+                        </div>
+                        <div class="chromia-slider owl-carousel owl-theme">
+                            <!-- Start Slider Item 1 -->
+                            <div class="item" data-hash="slider3img1">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-1.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Hedget</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 1 -->
+                            <!-- Start Slider Item 2 -->
+                            <div class="item" data-hash="slider3img2">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-2.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Hedget</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 2 -->
+                            <!-- Start Slider Item 3 -->
+                            <div class="item" data-hash="slider3img3">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-2.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite sm-font-head2">Hedget</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 3 -->
+                        </div>
+                        <!-- Start Slider Nav Images for Slider 3 -->
+                        <div class="slider-navigation d-flex justify-content-between mt-3">
+                            <a href="#slider3img1" class="d-inline-block mr-3"><img src="images/chromia-slider-img11-.png" alt=""></a>
+                            <a href="#slider3img2" class="d-inline-block mr-3"><img src="images/chromia-slider-img-2.png" alt=""></a>
+                            <a href="#slider3img3" class="d-inline-block"><img src="images/chromia-slider-img-2.png" alt=""></a>
+                        </div>
+                        <!-- End Slider Nav Images 3 -->
+                    </div>
+                </div>
+                <!-- End Chromia Slider No 3 -->
+            </div>
+        </div>
+        <!-- Start Chromia Slider No 4 -->
+        <div class="slider-content slider-content-4 py-5 md-py2">
+            <div class="chromia-slider-container container">
+                <div class="chromia-slider-4">
+                    <div class="slider-col slider-col-2">
+                        <div class="slider-col-head mb-2">
+                            <h3 class="font-heading sm-font-head">Futuristic concepts</h3>
+                        </div>
+                        <div class="chromia-slider owl-carousel owl-theme">
+                            <!-- Start Slider Item 1 -->
+                            <div class="item" data-hash="slider4img1">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-1.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 1 -->
+                            <!-- Start Slider Item 2 -->
+                            <div class="item" data-hash="slider4img2">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-2.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 2 -->
+                            <!-- Start Slider Item 3 -->
+                            <div class="item" data-hash="slider4img3">
+                                <!-- Start Slider Section Row -->
+                                <div class="slider-row row justify-content-between">
+                                    <!-- Start Slider Column 1 -->
+                                    <div class="col-md-9">
+                                        <div class="slider-col slider-col-1">
+                                            <picture>
+                                                <img src="images/chromia-slider-img-2.png" alt="Screenshot Chain Of Alliance Game">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 1 -->
+                                    <!-- Start Slider Column 2-->
+                                    <div class="col-md-3 align-self-center pr-0">
+                                        <div class="slider-col slider-col-2">
+                                            <h4 class="font-main-bold mb-3"><a href="#" class="text-decoration-none text-offwhite">Chain of Alliance</a></h4>
+                                            <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
+                                            <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
+                                            <a href="#" class="d-inline-block text-yellow">Read blog post <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Slider Column 2 -->
+                                </div>
+                                <!-- End Slider Section Row -->
+                            </div>
+                            <!-- End Slider Item 3 -->
+                        </div>
+                        <!-- Start Slider Nav Images for Slider 4 -->
+                        <div class="slider-navigation d-flex justify-content-between mt-3">
+                            <a href="#slider4img1" class="d-inline-block mr-3"><img src="images/chromia-slider-img11-.png" alt=""></a>
+                            <a href="#slider4img2" class="d-inline-block mr-3"><img src="images/chromia-slider-img-2.png" alt=""></a>
+                            <a href="#slider4img3" class="d-inline-block"><img src="images/chromia-slider-img-2.png" alt=""></a>
+                        </div>
+                        <!-- End Slider Nav Images for Slider 4 -->
+                    </div>
+                </div>
+                <!-- End Chromia Slider No 4 -->
+            </div>
+        </div>
+    </section>
+    <!-- End Slider Section -->
     <!-- BlockChain Section -->
     <section class="blockchain-sec">
         <!-- Start BLockhain Container -->
         <div class="blockchain-container container">
-            <div class="blockchain-content pt-5 md-pt0">
+            <div class="blockchain-content mt-5 md-mt0">
                 <!-- Start BlockChain Heading -->
                 <div class="blockchain-head mx-auto">
                     <h2 class="relational font-heading sm-font-head">Relational</h2>
@@ -199,7 +654,7 @@
                 <!-- End Blockchain Heading -->
                 <!-- BlockChain Text -->
                 <div class="blockchain-text text-center pt-5 md-pt md-pb2 mx-auto">
-                    <p class="sm-font-main2">Relational database + blockchain = Relational blockchain</p>
+                    <span class="span-1 sm-font-main2 d-inline-block py-1 px-2">Relational database</span> <span class="font-weight-bolder">+</span> <span class="span-2 d-inline-block py-1 px-2">blockchain</span> <span class="font-weight-bolder">=</span>                    <span class="span-3 d-inline-block py-1 mt-3 px-2">Relational blockchain</span>
                 </div>
                 <!-- End BlockChain Text -->
                 <!-- Start BlockChain Row -->
@@ -353,7 +808,7 @@
                                             </div>
                                             <!-- End Custom List 2 -->
                                         </div>
-                                        <p class="sm-font-main">Together 1,2 and 3 is a Node. Distribute Nodes among several independent participants.</p>
+                                        <p class="sm-font-main">Together 1, 2 and 3 is a Node. Distribute Nodes among several independent participants.</p>
                                     </div>
                                     <div class="together-content">
                                         <h5 class="sm-font-head2">Wiring it together</h5>
@@ -396,18 +851,32 @@
         <!-- Start Ethereumy Container -->
         <div class="ethereumy-container container">
             <div class="ethereumy-content py-5 md-py2">
-                <!-- Start Ethereumy Heading Container -->
-                <div class="ethereumy-head mx-auto position-relative">
-                    <span class="ethereumy-img d-inline-block"><img src="images/eth-diamond-rainbow.png" alt=""></span>
-                    <h2 class="text-offwhite font-heading d-inline-block sm-font-head">Plays well
-                        <br> <span class="font-main">with</span> Ethereumy</h2>
-                </div>
-                <!-- End Ethereumy Heading Container -->
-                <h3 class="text-center pt-4 mb-5 md-pt2 md-mb2">Chromia works in different ways, as a:</h3>
-                <!-- Plays with Ethereumy Section Row -->
+                <!-- Start Plays with Ethereumy Section Row -->
                 <div class="ethereumy-row row justify-content-between">
+                    <!-- Start Column 1 -->
+                    <div class="col-md-6">
+                        <!-- Start Ethereumy Heading Container -->
+                        <div class="ethereumy-head mx-auto position-relative">
+                            <span class="ethereumy-img d-inline-block"><img src="images/eth-diamond-rainbow.png" alt=""></span>
+                            <h2 class="text-offwhite font-heading d-inline-block sm-font-head">Plays well
+                                <br> <span class="font-main">with</span> Ethereumy</h2>
+                        </div>
+                    </div>
+                    <!-- End Column 1 -->
+                    <!-- Start Column 2 -->
+                    <div class="col-md-6">
+                        <div class="ethereumy-col-content">
+                            <p class="text-offwhite sm-font-main">Chromia can be a Layer Two to Ethereum, making use of cheaper and faster development time as well as cheaper and faster transactions. This is how Hedget creates a marketplace for financial options, DeFi made faster playing
+                                well with Ethereum. Read below on why Relational Blockchain makes development faster.</p>
+                        </div>
+                    </div>
+                    <!-- End Column 1 -->
+                    <!-- End Ethereumy Heading Container -->
+                    <!-- <h3 class="text-center pt-4 mb-5 md-pt2 md-mb2">Chromia works in different ways, as a:</h3> -->
+                    <!-- Plays with Ethereumy Section Row -->
+                    <!-- <div class="ethereumy-row row justify-content-between"> -->
                     <!-- Start Ethereumy Col 1 -->
-                    <div class="col-md-4 md-mb2">
+                    <!-- <div class="col-md-4 md-mb2">
                         <div class="ethereumy-col ethereumy-col-1">
                             <div class="ethereumy-col-img">
                                 <picture>
@@ -418,10 +887,10 @@
                             <p class="pb-2 sm-font-main">As a Layer Two to Ethereum, making use of cheaper and faster development time as well as cheaper and faster transactions.</p>
                             <p class="sm-font-main">This is how Hedget creates a marketplace for financial options, DeFi made faster playing well with Ethereum. Read below on why Relational Blockchain makes development faster.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Ethereumy Col 1 -->
                     <!-- Start Ethereumy Col 2 -->
-                    <div class="col-md-4 md-mb2">
+                    <!-- <div class="col-md-4 md-mb2">
                         <div class="ethereumy-col ethereumy-col-2">
                             <div class="ethereumy-col-img">
                                 <picture>
@@ -433,10 +902,10 @@
                             <p class="sm-font-main">This is how decentralized social networks (eg Chromunity) and games such as Chain of Alliance can have full logic on-chain, and how on Chromia can be used even by gamers with absolutely no knowledge of blockchain (Novas Journey).
                                 Play well, good game.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Ethereumy Col 2 -->
                     <!-- Start Ethereumy Col 3 -->
-                    <div class="col-md-4 md-mb2">
+                    <!-- <div class="col-md-4 md-mb2">
                         <div class="ethereumy-col ethereumy-col-3">
                             <div class="ethereumy-col-img">
                                 <picture>
@@ -448,14 +917,63 @@
                             <p class="sm-font-main">The unique roots in relational databases and smooth hybrid capabilities is fantastic news for enterprises. This is how the InterAmerican Development Bank use the Chromia Platform, and how the Green Assets Wallet changes the
                                 game of green finance.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Ethereumy Col 3 -->
+                    <!-- </div> -->
+                    <!-- End Plays with Ethereumy Section Row -->
                 </div>
             </div>
         </div>
         <!-- End Ethereumy Container -->
     </section>
     <!-- End Plays with Ethereumy Section-->
+    <!-- Start Enterprise Blockchain Section -->
+    <section class="enterprise-sec mt-5 md-mt2 pb-5 md-pb2">
+        <!-- Start Enterprise Blockchain Container -->
+        <div class="enterprise-container container">
+            <div class="enterprise-content">
+                <!-- Start Enterprise Blockchain Heading Container -->
+                <div class="enterprise-head text-center mb-5 md-mb0">
+                    <h2 class="font-heading sm-font-head">Enterprise blockchain</h2>
+                    <h5 class="sm-font-main">built on enterprise technology</h5>
+                    <p class="sm-font-main mt-5 md-mt2">Chromia is built on relational database technology, meaning decades of real world enterprise technology used in all industries. Chromia can be used as a private, public or hybrid blockchain.</p>
+                </div>
+                <!-- End Enterprise Blockchain Heading Container -->
+                <!-- Start Enterprise Blockchain Row -->
+                <div class="enterprise-row row justify-content-between pt-4 md-pt0">
+                    <!-- Start Enterprise Blockchain Col 1 -->
+                    <div class="col-md-6">
+                        <div class="enterprise-col enterprise-col-1">
+                            <div class="enterprise-col-img">
+                                <picture>
+                                    <img src="images/enterprise-col-1.png" alt="circles">
+                                </picture>
+                            </div>
+                            <h5 class="font-main-bold sm-font-main2 mt-4 mb-2">As an enterprise private or hybrid blockchain.</h5>
+                            <p class="sm-font-main">The Chromia Platform originated from enterprise use-cases, pioneering work done in Land Registration and E-Currencies. The unique roots in relational databases and smooth hybrid capabilities is fantastic news for enterprises.</p>
+                        </div>
+                    </div>
+                    <!-- End Enterprise Blockchain Col 1 -->
+                    <!-- Start Enterprise Blockchain Col 2 -->
+                    <div class="col-md-6">
+                        <div class="enterprise-col enterprise-col-2">
+                            <div class="enterprise-col-img">
+                                <picture>
+                                    <img src="images/enterprise-col-2.png" alt="circles">
+                                </picture>
+                            </div>
+                            <h5 class="font-main-bold sm-font-main2 mt-4 mb-2">As an independent public blockchain.</h5>
+                            <p class="sm-font-main">Fast and easy development, intuitive for users. This is how decentralized social networks and games can have full logic on-chain, but also how new financial applications and transparent enterprise applications can be built.</p>
+                        </div>
+                    </div>
+                    <!-- End Enterprise Blockchain Col 2 -->
+                </div>
+                <!-- End Enterprise Blockchain Row -->
+            </div>
+        </div>
+        <!-- End Enterprise Blockchain Container -->
+    </section>
+    <!-- End Enterprise Blockchain Section -->
     <!-- Start Try Our Tools Section -->
     <section class="tools-sec bg-light-dark pb-5 md-py2">
         <!-- Start Try Our Tools Container -->
@@ -1152,6 +1670,7 @@
     <script src="Bootstrap Plugins/jquery.min.js "></script>
     <script src="Bootstrap Plugins/popper.min.js "></script>
     <script src="Bootstrap Plugins/Bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
     </head>
 </body>

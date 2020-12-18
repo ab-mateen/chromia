@@ -1,3 +1,17 @@
+// Chrmoia Slider
+$('.chromia-slider.owl-carousel').owlCarousel({
+    items: 1,
+    nav: false,
+    dots: false,
+    loop: false,
+    center: true,
+    margin: 10,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: 'URLHash'
+});
+
+
 // Founder Popup
 $(document).ready(function() {
     // Show Founder Popup 1
