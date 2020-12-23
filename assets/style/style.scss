@@ -170,6 +170,11 @@ section.chromia-slider-sec {
         .slider-navigation {
             margin-left: auto;
             max-width: 1120px;
+            a {
+                &:active {
+                    outline: 1px solid $chromia-yellow;
+                }
+            }
         }
     }
 }
@@ -388,10 +393,11 @@ section.blockchain-sec {
                 .relational-border {
                     svg {
                         position: absolute;
-                        left: -78%;
+                        // left: -78%;
                         top: -111%;
                         // left: -340px;
                         // top: -309px;
+                        left: -76%;
                         width: 320px;
                         height: 500px;
                         z-index: -1;
@@ -403,8 +409,10 @@ section.blockchain-sec {
                         // top: -280px;
                         // left: -11px;
                         top: -101%;
-                        left: 3%;
-                        height: 384px;
+                        // left: 3%;
+                        // height: 384px;
+                        left: -17%;
+                        height: 300px;
                         width: 555px;
                         z-index: -1;
                     }
@@ -672,7 +680,7 @@ section.enterprise-sec {
                 min-height: 140px;
                 border-radius: 8px;
                 img {
-                    max-width: 180px;
+                    max-width: 160px;
                 }
             }
         }
@@ -938,6 +946,9 @@ footer {
             display: none !important;
         }
     }
+    .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog::before {
+        display: none !important;
+    }
     .blockchain-col-txt p {
         font-size: 11px !important;
     }
@@ -948,5 +959,13 @@ footer {
         top: -5% !important;
         right: 4% !important;
         max-width: 95px !important;
+    }
+}
+
+@media (max-width: 370px) and (min-width:315px) {
+    .blockchain-col-img {
+        top: -3% !important;
+        right: 1% !important;
+        max-width: 57px !important;
     }
 }
