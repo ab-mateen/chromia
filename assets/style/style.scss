@@ -84,6 +84,7 @@ section.banner-section {
                     border: none;
                     outline: 0;
                     padding-left: 20px;
+                    color: $chromia-offwhite;
                     &::placeholder {
                         color: $chromia-offwhite;
                         font-size: 18px;
@@ -109,6 +110,8 @@ section.banner-section {
                     &:hover {
                         color: $chromia-offwhite;
                         transition: .2s;
+                        background-color: #ff0d32;
+                        transition: .25s;
                     }
                 }
             }
@@ -130,20 +133,53 @@ section.services-sec {
         p {
             font-family: $NbRegular;
             max-width: 320px;
-            &:after {
-                content: 'Rell is 7 times more compact than SQL';
-                background-image: url(../../images/serv-tooltip.png);
-                background-size: 100% 100%;
-                max-width: 162px;
-                padding: 13px 11px 4px;
-                display: none;
-                position: absolute;
-                top: unset;
-                bottom: -65px;
-                left: 30px;
+        }
+    }
+    .services-col-1 {
+        a {
+            &:hover {
+                color: $chromia-offwhite;
             }
-            &:hover::after {
-                display: inline-block;
+            p {
+                span {
+                    border-bottom: 1px dashed $chromia-purple;
+                }
+                span.sp-seven {
+                    &:after {
+                        content: 'Compared to SQL';
+                        font-size: 14px;
+                        background-image: url(../../images/serv-tooltip.png);
+                        background-size: 100% 100%;
+                        max-width: 162px;
+                        padding: 13px 11px 4px;
+                        display: none;
+                        position: absolute;
+                        top: unset;
+                        bottom: -43px;
+                        left: 44px;
+                    }
+                    &:hover::after {
+                        display: inline-block;
+                    }
+                }
+                span.sp-ten {
+                    &:after {
+                        content: 'Compared to other modern Blockchains';
+                        font-size: 14px;
+                        background-image: url(../../images/serv-tooltip.png);
+                        background-size: 100% 100%;
+                        max-width: 162px;
+                        padding: 13px 11px 4px;
+                        display: none;
+                        position: absolute;
+                        top: unset;
+                        bottom: -61px;
+                        right: -50px;
+                    }
+                    &:hover::after {
+                        display: inline-block;
+                    }
+                }
             }
         }
     }

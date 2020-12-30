@@ -609,6 +609,7 @@ section.banner-section .banner-content .banner-col .banner-email-btn input {
   border: none;
   outline: 0;
   padding-left: 20px;
+  color: #fff8f8;
 }
 
 section.banner-section .banner-content .banner-col .banner-email-btn input::-webkit-input-placeholder {
@@ -655,6 +656,9 @@ section.banner-section .banner-content .banner-col .banner-email-btn a:hover {
   color: #fff8f8;
   -webkit-transition: .2s;
   transition: .2s;
+  background-color: #ff0d32;
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 
 section.services-sec .services-col img {
@@ -671,8 +675,17 @@ section.services-sec .services-col p {
   max-width: 320px;
 }
 
-section.services-sec .services-col p:after {
-  content: 'Rell is 7 times more compact than SQL';
+section.services-sec .services-col-1 a:hover {
+  color: #fff8f8;
+}
+
+section.services-sec .services-col-1 a p span {
+  border-bottom: 1px dashed #CB92F0;
+}
+
+section.services-sec .services-col-1 a p span.sp-seven:after {
+  content: 'Compared to SQL';
+  font-size: 14px;
   background-image: url(../../images/serv-tooltip.png);
   background-size: 100% 100%;
   max-width: 162px;
@@ -680,11 +693,29 @@ section.services-sec .services-col p:after {
   display: none;
   position: absolute;
   top: unset;
-  bottom: -65px;
-  left: 30px;
+  bottom: -43px;
+  left: 44px;
 }
 
-section.services-sec .services-col p:hover::after {
+section.services-sec .services-col-1 a p span.sp-seven:hover::after {
+  display: inline-block;
+}
+
+section.services-sec .services-col-1 a p span.sp-ten:after {
+  content: 'Compared to other modern Blockchains';
+  font-size: 14px;
+  background-image: url(../../images/serv-tooltip.png);
+  background-size: 100% 100%;
+  max-width: 162px;
+  padding: 13px 11px 4px;
+  display: none;
+  position: absolute;
+  top: unset;
+  bottom: -61px;
+  right: -50px;
+}
+
+section.services-sec .services-col-1 a p span.sp-ten:hover::after {
   display: inline-block;
 }
 
