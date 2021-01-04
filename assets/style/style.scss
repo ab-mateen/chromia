@@ -59,7 +59,7 @@ header {
 
 // Banner Section
 section.banner-section {
-    height: calc(100vh - 113px);
+    height: calc(100vh - 178px);
     .banner-content {
         .banner-col {
             h1 {
@@ -189,6 +189,9 @@ section.services-sec {
 section.chromia-slider-sec {
     .slider-content {
         .slider-col {
+            img {
+                border-radius: 8px;
+            }
             h4 {
                 a {
                     &::after {
@@ -196,20 +199,80 @@ section.chromia-slider-sec {
                         margin-left: 6px;
                         color: #C7C7C7;
                     }
+                    &:hover {
+                        color: $chromia-offwhite;
+                    }
                 }
             }
             p {
                 color: #C7C7C7;
                 font-size: 15px;
             }
+            a {
+                &:hover {
+                    color: $chromia-yellow;
+                }
+            }
         }
         .slider-navigation {
-            margin-left: auto;
-            max-width: 1120px;
+            // margin-left: auto;
+            // max-width: 1120px;
             a {
+                min-height: 122px;
+                border-radius: 8px;
+                padding-bottom: 7px;
                 &:active {
                     outline: 1px solid $chromia-yellow;
                 }
+            }
+            a.nav-coa {
+                background: url(../../images/chain-of-alliance.jpg) no-repeat;
+                background-size: cover;
+            }
+            a.nav-mod {
+                background: url(../../images/nav-mod.png) no-repeat;
+                background-size: cover;
+            }
+            a.nav-kry {
+                background: url(../../images/nav-kry.png) no-repeat;
+                background-size: cover;
+            }
+            a.nav-mna {
+                background: url(../../images/nav-mna.png) no-repeat;
+                background-size: cover;
+            }
+            .gamesr-nav {
+                width: 24%;
+            }
+        }
+        .slider-navigation-2 {
+            a {
+                min-height: 180px;
+            }
+            a.nav-gaw {
+                background: url(../../images/gaw-2.png) no-repeat;
+                background-size: cover;
+            }
+            a.nav-lac {
+                background: url(../../images/nav-lac.jpg) no-repeat;
+                background-size: cover;
+            }
+            a.nav-cap {
+                background: url(../../images/cap-chap.png) no-repeat;
+                background-size: cover;
+            }
+        }
+        .slider-navigation-4 {
+            a {
+                min-height: 210px;
+            }
+            a.nav-fre {
+                background: url(../../images/freela-nav.jpg) no-repeat;
+                background-size: cover;
+            }
+            a.nav-chr {
+                background: url(../../images/Chromunity-nav.jpg) no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -418,7 +481,7 @@ section.blockchain-sec {
                     line-height: 1.3;
                 }
                 a {
-                    max-width: 200px;
+                    max-width: 230px;
                     padding: 9px 0;
                     font-size: 17px;
                     &:hover {
@@ -459,10 +522,10 @@ section.blockchain-sec {
 }
 
 // Plays with Ethereumy Section
-.ethereumy-content {
+.ethereum-content {
     border-top: 1px solid #414141;
     border-bottom: 1px solid #414141;
-    .ethereumy-head {
+    .ethereum-head {
         max-width: 535px;
         span {
             vertical-align: top;
@@ -481,8 +544,8 @@ section.blockchain-sec {
     h3 {
         font-size: 27px;
     }
-    .ethereumy-row {
-        .ethereumy-col-content {
+    .ethereum-row {
+        .ethereum-col-content {
             p {
                 max-width: 550px;
                 margin-left: auto;
@@ -536,6 +599,14 @@ section.enterprise-sec {
                 }
                 h4 {
                     font-size: 26px;
+                }
+                p {
+                    a {
+                        text-decoration: underline;
+                        &:hover {
+                            color: $chromia-offwhite;
+                        }
+                    }
                 }
                 a {
                     max-width: 230px;
@@ -756,6 +827,9 @@ section.enterprise-sec {
                     }
                 }
             }
+            a {
+                width: 260px;
+            }
         }
     }
 }
@@ -775,6 +849,9 @@ section.enterprise-sec {
                     color: $chromia-offwhite;
                 }
             }
+            a {
+                width: 200px;
+            }
         }
     }
 }
@@ -793,6 +870,11 @@ section.enterprise-sec {
     }
     .blog-post-container {
         .blog-row {
+            a {
+                &:hover {
+                    color: $chromia-offwhite;
+                }
+            }
             .blog-col {
                 border: 1px solid #9A9A9A;
                 // min-height: 256px;
@@ -801,7 +883,7 @@ section.enterprise-sec {
                 }
             }
             .blog-col-2 {
-                border-color: $chromia-red;
+                // border-color: $chromia-red;
                 p.up-event {
                     top: -15px;
                     z-index: 1;
@@ -827,6 +909,13 @@ section.enterprise-sec {
             width: 100%;
             max-width: 200px;
             margin-left: -90px;
+            &:hover {
+                background: $chromia-offwhite;
+                a {
+                    color: $chromia-dark;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -985,8 +1074,19 @@ footer {
     .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog::before {
         display: none !important;
     }
+    section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col {
+        width: 21%;
+    }
     .blockchain-col-txt p {
-        font-size: 11px !important;
+        font-size: 8px !important;
+    }
+    .slider-navigation {
+        flex-wrap: wrap;
+    }
+    .gamesr-nav,
+    .slider-nav {
+        width: 100% !important;
+        margin-top: 5px;
     }
 }
 
@@ -996,6 +1096,9 @@ footer {
         right: 4% !important;
         max-width: 95px !important;
     }
+    section.blockchain-sec .blockchain-content .blockchain-head h2 span {
+        font-size: 28px !important;
+    }
 }
 
 @media (max-width: 370px) and (min-width:315px) {
@@ -1003,5 +1106,11 @@ footer {
         top: -3% !important;
         right: 1% !important;
         max-width: 57px !important;
+    }
+}
+
+@media (max-width: 368px) {
+    section.blockchain-sec .blockchain-content .blockchain-text .span-2 {
+        margin-top: 16px;
     }
 }

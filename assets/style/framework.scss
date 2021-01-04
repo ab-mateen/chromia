@@ -1,17 +1,4 @@
 @import 'variables.scss';
-// Bootstrap Container
-@media (min-width: 992px) {
-    .blockchain-container.container {
-        max-width: 1024px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1200px !important;
-    }
-}
-
 * {
     box-sizing: border-box;
 }
@@ -42,8 +29,47 @@ img {
     height: auto;
 }
 
+// Bootstrap Container
+@media (min-width: 992px) {
+    .blockchain-container.container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1700px !important;
+    }
+}
+
 .btn-border {
     border-radius: $borderoval;
+}
+
+.rounded {
+    border-radius: 8px !important;
+}
+
+.w-50 {
+    width: 49% !important;
+}
+
+@media (min-width: 595px) {
+    .w-32 {
+        width: 32%;
+    }
+}
+
+@media (max-width: 595px) {
+    .sm-w-100 {
+        width: 100% !important;
+    }
 }
 
 
@@ -265,6 +291,28 @@ h5 {
 }
 
 // Responsive FrameWork
+.p-6 {
+    padding: $space6;
+}
+
+.pl-6 {
+    padding-left: $space6;
+}
+
+.pr-6 {
+    padding-right: $space6;
+}
+
+.px-6 {
+    padding-left: $space6;
+    padding-right: $space6;
+}
+
+.py-6 {
+    padding-top: $space6;
+    padding-bottom: $space6;
+}
+
 // For Tablet Devices
 @media (max-width: 768px) {
     // Margin Padding for Tablet Devices

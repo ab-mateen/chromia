@@ -29,18 +29,6 @@
   font-weight: 700;
 }
 
-@media (min-width: 992px) {
-  .blockchain-container.container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px !important;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,8 +60,46 @@ img {
   height: auto;
 }
 
+@media (min-width: 992px) {
+  .blockchain-container.container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1700px !important;
+  }
+}
+
 .btn-border {
   border-radius: 30px;
+}
+
+.rounded {
+  border-radius: 8px !important;
+}
+
+.w-50 {
+  width: 49% !important;
+}
+
+@media (min-width: 595px) {
+  .w-32 {
+    width: 32%;
+  }
+}
+
+@media (max-width: 595px) {
+  .sm-w-100 {
+    width: 100% !important;
+  }
 }
 
 /* Font styles */
@@ -296,86 +322,108 @@ h5 {
   opacity: 1;
 }
 
+.p-6 {
+  padding: 5rem;
+}
+
+.pl-6 {
+  padding-left: 5rem;
+}
+
+.pr-6 {
+  padding-right: 5rem;
+}
+
+.px-6 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 @media (max-width: 768px) {
   .md-pt {
-    padding-top: 20px !important;
+    padding-top: 30px !important;
   }
   .md-pb {
-    padding-bottom: 20px !important;
+    padding-bottom: 30px !important;
   }
   .md-pl {
-    padding-left: 20px !important;
+    padding-left: 30px !important;
   }
   .md-pr {
-    padding-right: 20px !important;
+    padding-right: 30px !important;
   }
   .md-py {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
   .md-px {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
   }
   .md-pt2 {
-    padding-top: 30px !important;
+    padding-top: 40px !important;
   }
   .md-pb2 {
-    padding-bottom: 30px !important;
+    padding-bottom: 40px !important;
   }
   .md-pl2 {
-    padding-left: 30px !important;
+    padding-left: 40px !important;
   }
   .md-pr2 {
-    padding-right: 30px !important;
+    padding-right: 40px !important;
   }
   .md-py2 {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
   .md-px2 {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
   }
   .md-mt {
-    margin-top: 20px !important;
+    margin-top: 30px !important;
   }
   .md-mb {
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
   }
   .md-ml {
-    margin-left: 20px !important;
+    margin-left: 30px !important;
   }
   .md-mr {
-    margin-left: 20px !important;
+    margin-left: 30px !important;
   }
   .md-my {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
   }
   .md-mx {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-  }
-  .md-mt2 {
-    margin-top: 30px !important;
-  }
-  .md-mb2 {
-    margin-bottom: 30px !important;
-  }
-  .md-ml2 {
-    margin-left: 30px !important;
-  }
-  .md-mr2 {
-    margin-left: 30px !important;
-  }
-  .md-my2 {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
-  }
-  .md-mx2 {
     margin-left: 30px !important;
     margin-right: 30px !important;
+  }
+  .md-mt2 {
+    margin-top: 40px !important;
+  }
+  .md-mb2 {
+    margin-bottom: 40px !important;
+  }
+  .md-ml2 {
+    margin-left: 40px !important;
+  }
+  .md-mr2 {
+    margin-left: 40px !important;
+  }
+  .md-my2 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  .md-mx2 {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
   }
   .md-pt0 {
     padding-top: 0 !important;
@@ -433,44 +481,44 @@ h5 {
     font-size: 14px !important;
   }
   .sm-pt {
-    padding-top: 30px !important;
+    padding-top: 40px !important;
   }
   .sm-pb {
-    padding-bottom: 30px !important;
+    padding-bottom: 40px !important;
   }
   .sm-pl {
-    padding-left: 30px !important;
+    padding-left: 40px !important;
   }
   .sm-pr {
-    padding-right: 30px !important;
+    padding-right: 40px !important;
   }
   .sm-py {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
   .sm-px {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
   .sm-mt {
-    margin-top: 30px !important;
+    margin-top: 40px !important;
   }
   .sm-mb {
-    margin-bottom: 30px !important;
+    margin-bottom: 40px !important;
   }
   .sm-ml {
-    margin-left: 30px !important;
+    margin-left: 40px !important;
   }
   .sm-mr {
-    margin-right: 30px !important;
+    margin-right: 40px !important;
   }
   .sm-my {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
   }
   .sm-mx {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
   }
 }
 /*# sourceMappingURL=framework.css.map */
