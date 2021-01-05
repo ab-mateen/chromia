@@ -7,7 +7,6 @@ $('.chromia-slider.owl-carousel').owlCarousel({
     center: true,
     margin: 10,
     URLhashListener: true,
-    autoplayHoverPause: false,
     startPosition: 'URLHash'
 });
 
@@ -44,19 +43,21 @@ $(document).ready(function() {
         $('.founder-tooltip-3').show("slow");
         $('#founder-popup3').hide("slow");
     })
-
-    // Show Founder Popup 3
-    // $('#btn-tooltip3').click(function() {
-    //         $('#founder-popup3').show("slow", function() {
-    //             $('.founder-txt-3').css("position", "unset");
-    //         });
-    //         $('.founder-tooltip-3').hide("slow");
-    //     })
-    // Hide Founder Popup 3
-    //     $('#close-btn3').click(function() {
-    //         $('.founder-tooltip-3').show("slow");
-    //         $('#founder-popup3').hide("slow", function() {
-    //             $('.founder-txt-3').css("position", "absolute");
-    //         });
-    //     })
 });
+// Blog Event
+document.getElementById('blog_event').style.visibility = "visible";
+document.getElementById('border_red').style.borderColor = "#FF405E";
+// Show Founder Popup 3
+// $('#btn-tooltip3').click(function() {
+//         $('#founder-popup3').show("slow", function() {
+//             $('.founder-txt-3').css("position", "unset");
+//         });
+//         $('.founder-tooltip-3').hide("slow");
+//     })
+// Hide Founder Popup 3
+//     $('#close-btn3').click(function() {
+//         $('.founder-tooltip-3').show("slow");
+//         $('#founder-popup3').hide("slow", function() {
+//             $('.founder-txt-3').css("position", "absolute");
+//         });
+//     })
