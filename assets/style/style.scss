@@ -37,6 +37,9 @@ header {
         nav {
             .navbar-nav {
                 .nav-link {
+                    &:hover {
+                        color: $chromia-logo-pink !important;
+                    }
                     i {
                         width: 30px;
                         height: 30px;
@@ -61,7 +64,7 @@ header {
 
 // Banner Section
 section.banner-section {
-    height: calc(100vh - 178px);
+    height: calc(100vh - 131px);
     .banner-content {
         .banner-col {
             h1 {
@@ -76,7 +79,7 @@ section.banner-section {
             .banner-email-btn {
                 margin-top: 57px;
                 max-width: 440px;
-                p {
+                label {
                     color: #7B7B7B;
                     margin-bottom: 16px;
                     font-size: 18px;
@@ -95,13 +98,13 @@ section.banner-section {
                         background: $chromia-gray;
                     }
                 }
-                a {
+                input.subBtn {
                     text-decoration: none;
                     height: 40px;
                     width: 100%;
                     max-width: 125px;
                     text-align: center;
-                    padding-top: 7px;
+                    // padding-top: 7px;
                     font-weight: 500;
                     position: absolute;
                     top: 0;
@@ -112,8 +115,11 @@ section.banner-section {
                     &:hover {
                         color: $chromia-offwhite;
                         transition: .2s;
-                        background-color: #ff0d32;
+                        background-color: $chromia-darkred;
                         transition: .25s;
+                    }
+                    &:focus {
+                        background-color: $chromia-darkred;
                     }
                 }
             }
@@ -150,7 +156,7 @@ section.services-sec {
                     &:after {
                         content: 'Compared to SQL';
                         font-size: 14px;
-                        background-image: url(../../images/serv-tooltip.png);
+                        background-image: url(../../images/services/serv-tooltip.png);
                         background-size: 100% 100%;
                         max-width: 162px;
                         padding: 13px 11px 4px;
@@ -168,7 +174,7 @@ section.services-sec {
                     &:after {
                         content: 'Compared to other modern Blockchains';
                         font-size: 14px;
-                        background-image: url(../../images/serv-tooltip.png);
+                        background-image: url(../../images/services/serv-tooltip.png);
                         background-size: 100% 100%;
                         max-width: 162px;
                         padding: 13px 11px 4px;
@@ -202,7 +208,10 @@ section.chromia-slider-sec {
                         color: #C7C7C7;
                     }
                     &:hover {
-                        color: $chromia-offwhite;
+                        color: $chromia-yellow;
+                        &::after {
+                            color: $chromia-yellow;
+                        }
                     }
                 }
             }
@@ -223,27 +232,24 @@ section.chromia-slider-sec {
                 min-height: 122px;
                 border-radius: 8px;
                 padding-bottom: 7px;
-                &:active {
-                    outline: 1px solid $chromia-yellow;
-                }
-                &:visited {
-                    outline: 1px solid $chromia-yellow;
+                &:focus {
+                    border: 2px solid $chromia-yellow;
                 }
             }
             a.nav-coa {
-                background: url(../../images/chain-of-alliance.jpg) no-repeat;
+                background: url(../../images/slider/chain-of-alliance.jpg) no-repeat;
                 background-size: cover;
             }
             a.nav-mod {
-                background: url(../../images/nav-mod.png) no-repeat;
+                background: url(../../images/slider/nav-mod.png) no-repeat;
                 background-size: cover;
             }
             a.nav-kry {
-                background: url(../../images/nav-kry.png) no-repeat;
+                background: url(../../images/slider/nav-kry.png) no-repeat;
                 background-size: cover;
             }
             a.nav-mna {
-                background: url(../../images/nav-mna.png) no-repeat;
+                background: url(../../images/slider/nav-mna.png) no-repeat;
                 background-size: cover;
             }
             .gamesr-nav {
@@ -251,32 +257,26 @@ section.chromia-slider-sec {
             }
         }
         .slider-navigation-2 {
-            a {
-                min-height: 180px;
-            }
             a.nav-gaw {
-                background: url(../../images/gaw-2.png) no-repeat;
+                background: url(../../images/slider/gaw-2.png) no-repeat;
                 background-size: cover;
             }
             a.nav-lac {
-                background: url(../../images/nav-lac.jpg) no-repeat;
+                background: url(../../images/slider/nav-lac.jpg) no-repeat;
                 background-size: cover;
             }
             a.nav-cap {
-                background: url(../../images/cap-chap.png) no-repeat;
+                background: url(../../images/slider/cap-chap.png) no-repeat;
                 background-size: cover;
             }
         }
         .slider-navigation-4 {
-            a {
-                min-height: 210px;
-            }
             a.nav-fre {
-                background: url(../../images/freela-nav.jpg) no-repeat;
+                background: url(../../images/slider/freela-nav.jpg) no-repeat;
                 background-size: cover;
             }
             a.nav-chr {
-                background: url(../../images/Chromunity-nav.jpg) no-repeat;
+                background: url(../../images/slider/Chromunity-nav.jpg) no-repeat;
                 background-size: cover;
             }
         }
@@ -286,7 +286,7 @@ section.chromia-slider-sec {
 // BlockChain Section
 section.blockchain-sec {
     .blockchain-content {
-        background: url(../../images/blocchain-head-bg.png) no-repeat;
+        background: url(../../images/blockchain/blocchain-head-bg.png) no-repeat;
         background-size: 100%;
         .blockchain-head {
             max-width: 580px;
@@ -649,7 +649,7 @@ section.enterprise-sec {
         }
     }
     .public-power-col-2 {
-        background: url(../../images/img-elements.png) no-repeat;
+        background: url(../../images/power-public/img-elements.png) no-repeat;
         background-size: 123% 103%;
         background-position-x: 25px;
         .public-power-col-2-row {
@@ -664,17 +664,17 @@ section.enterprise-sec {
                 }
             }
             .founder-tooltip-1 {
-                background: url(../../images/founder-1-tooltip.png) no-repeat;
+                background: url(../../images/power-public/founder-1-tooltip.png) no-repeat;
                 background-size: 100% 100%;
                 max-width: 185px;
             }
             .founder-tooltip-2 {
-                background: url(../../images/founder-2-tooltip.png) no-repeat;
+                background: url(../../images/power-public/founder-2-tooltip.png) no-repeat;
                 background-size: 100% 100%;
                 max-width: 185px;
             }
             .founder-tooltip-3 {
-                background: url(../../images/founder-3-tooltip.png) no-repeat;
+                background: url(../../images/power-public/founder-3-tooltip.png) no-repeat;
                 background-size: 100% 100%;
                 max-width: 185px;
             }
@@ -701,7 +701,7 @@ section.enterprise-sec {
                 .popup {
                     .popup-dialog {
                         &::before {
-                            content: url(../../images/popup-shape.png);
+                            content: url(../../images/power-public/popup-shape.png);
                             position: absolute;
                             top: 65px;
                             left: -30px;
@@ -738,7 +738,7 @@ section.enterprise-sec {
                             display: none;
                         }
                         &::after {
-                            content: url(../../images/popup-shape-2.png);
+                            content: url(../../images/power-public/popup-shape-2.png);
                             position: absolute;
                             top: 65px;
                             right: -30px;
@@ -755,7 +755,7 @@ section.enterprise-sec {
                             display: none;
                         }
                         &::after {
-                            content: url(../../images/popup-shape-3.png);
+                            content: url(../../images/power-public/popup-shape-3.png);
                             position: absolute;
                             top: 65px;
                             right: -30px;
@@ -911,16 +911,13 @@ section.enterprise-sec {
             height: 60px;
             border-color: $chromia-dark !important;
         }
-        button {
+        input.btn-newsletter {
             width: 100%;
             max-width: 200px;
             margin-left: -90px;
             &:hover {
                 background: $chromia-offwhite;
-                a {
-                    color: $chromia-dark;
-                    text-decoration: none;
-                }
+                color: $chromia-dark;
             }
         }
     }
@@ -974,6 +971,21 @@ footer {
     }
 }
 
+// MediaKit Page
+section.mk-main-sec {
+    .mk-container {
+        .mk-row {
+            .mk-col {
+                .mk-text {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Responsive
 @media (max-width: 1199px) {
     section.banner-section {
@@ -1007,12 +1019,13 @@ footer {
     }
     .relational-border svg {
         left: -93% !important;
-        top: -103% !important;
+        top: -124% !important;
+        transform: scaleY(1.8);
     }
     .blockchain-border svg {
-        top: -75% !important;
+        top: --84% !important;
         left: -13% !important;
-        transform: scale(0.77);
+        transform: scale(0.75);
     }
 }
 
@@ -1102,6 +1115,7 @@ footer {
     .slider-nav-9 {
         display: none;
     }
+    // MediaKit Page
 }
 
 @media (max-width: 430px) {

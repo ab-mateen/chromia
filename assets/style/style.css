@@ -610,6 +610,10 @@ header .header-lang-bar .lang-bar-content {
   max-width: 125px;
 }
 
+header .navigation nav .navbar-nav .nav-link:hover {
+  color: #FFB0C2 !important;
+}
+
 header .navigation nav .navbar-nav .nav-link i {
   width: 30px;
   height: 30px;
@@ -629,7 +633,7 @@ header .navigation nav .navbar-nav .nav-link:hover .dropdown-menu {
 }
 
 section.banner-section {
-  height: calc(100vh - 178px);
+  height: calc(100vh - 131px);
 }
 
 section.banner-section .banner-content .banner-col h1 span {
@@ -646,7 +650,7 @@ section.banner-section .banner-content .banner-col .banner-email-btn {
   max-width: 440px;
 }
 
-section.banner-section .banner-content .banner-col .banner-email-btn p {
+section.banner-section .banner-content .banner-col .banner-email-btn label {
   color: #7B7B7B;
   margin-bottom: 16px;
   font-size: 18px;
@@ -684,13 +688,12 @@ section.banner-section .banner-content .banner-col .banner-email-btn input:focus
   background: #393939;
 }
 
-section.banner-section .banner-content .banner-col .banner-email-btn a {
+section.banner-section .banner-content .banner-col .banner-email-btn input.subBtn {
   text-decoration: none;
   height: 40px;
   width: 100%;
   max-width: 125px;
   text-align: center;
-  padding-top: 7px;
   font-weight: 500;
   position: absolute;
   top: 0;
@@ -700,13 +703,17 @@ section.banner-section .banner-content .banner-col .banner-email-btn a {
   margin: auto;
 }
 
-section.banner-section .banner-content .banner-col .banner-email-btn a:hover {
+section.banner-section .banner-content .banner-col .banner-email-btn input.subBtn:hover {
   color: #fff8f8;
   -webkit-transition: .2s;
   transition: .2s;
-  background-color: #ff0d32;
+  background-color: #d41a45;
   -webkit-transition: .25s;
   transition: .25s;
+}
+
+section.banner-section .banner-content .banner-col .banner-email-btn input.subBtn:focus {
+  background-color: #d41a45;
 }
 
 section.services-sec .services-col img {
@@ -734,7 +741,7 @@ section.services-sec .services-col-1 a p span {
 section.services-sec .services-col-1 a p span.sp-seven:after {
   content: 'Compared to SQL';
   font-size: 14px;
-  background-image: url(../../images/serv-tooltip.png);
+  background-image: url(../../images/services/serv-tooltip.png);
   background-size: 100% 100%;
   max-width: 162px;
   padding: 13px 11px 4px;
@@ -752,7 +759,7 @@ section.services-sec .services-col-1 a p span.sp-seven:hover::after {
 section.services-sec .services-col-1 a p span.sp-ten:after {
   content: 'Compared to other modern Blockchains';
   font-size: 14px;
-  background-image: url(../../images/serv-tooltip.png);
+  background-image: url(../../images/services/serv-tooltip.png);
   background-size: 100% 100%;
   max-width: 162px;
   padding: 13px 11px 4px;
@@ -778,7 +785,11 @@ section.chromia-slider-sec .slider-content .slider-col h4 a::after {
 }
 
 section.chromia-slider-sec .slider-content .slider-col h4 a:hover {
-  color: #fff8f8;
+  color: #FFB600;
+}
+
+section.chromia-slider-sec .slider-content .slider-col h4 a:hover::after {
+  color: #FFB600;
 }
 
 section.chromia-slider-sec .slider-content .slider-col p {
@@ -796,31 +807,27 @@ section.chromia-slider-sec .slider-content .slider-navigation a {
   padding-bottom: 7px;
 }
 
-section.chromia-slider-sec .slider-content .slider-navigation a:active {
-  outline: 1px solid #FFB600;
-}
-
-section.chromia-slider-sec .slider-content .slider-navigation a:visited {
-  outline: 1px solid #FFB600;
+section.chromia-slider-sec .slider-content .slider-navigation a:focus {
+  border: 2px solid #FFB600;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation a.nav-coa {
-  background: url(../../images/chain-of-alliance.jpg) no-repeat;
+  background: url(../../images/slider/chain-of-alliance.jpg) no-repeat;
   background-size: cover;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation a.nav-mod {
-  background: url(../../images/nav-mod.png) no-repeat;
+  background: url(../../images/slider/nav-mod.png) no-repeat;
   background-size: cover;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation a.nav-kry {
-  background: url(../../images/nav-kry.png) no-repeat;
+  background: url(../../images/slider/nav-kry.png) no-repeat;
   background-size: cover;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation a.nav-mna {
-  background: url(../../images/nav-mna.png) no-repeat;
+  background: url(../../images/slider/nav-mna.png) no-repeat;
   background-size: cover;
 }
 
@@ -828,41 +835,33 @@ section.chromia-slider-sec .slider-content .slider-navigation .gamesr-nav {
   width: 24%;
 }
 
-section.chromia-slider-sec .slider-content .slider-navigation-2 a {
-  min-height: 180px;
-}
-
 section.chromia-slider-sec .slider-content .slider-navigation-2 a.nav-gaw {
-  background: url(../../images/gaw-2.png) no-repeat;
+  background: url(../../images/slider/gaw-2.png) no-repeat;
   background-size: cover;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation-2 a.nav-lac {
-  background: url(../../images/nav-lac.jpg) no-repeat;
+  background: url(../../images/slider/nav-lac.jpg) no-repeat;
   background-size: cover;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation-2 a.nav-cap {
-  background: url(../../images/cap-chap.png) no-repeat;
+  background: url(../../images/slider/cap-chap.png) no-repeat;
   background-size: cover;
 }
 
-section.chromia-slider-sec .slider-content .slider-navigation-4 a {
-  min-height: 210px;
-}
-
 section.chromia-slider-sec .slider-content .slider-navigation-4 a.nav-fre {
-  background: url(../../images/freela-nav.jpg) no-repeat;
+  background: url(../../images/slider/freela-nav.jpg) no-repeat;
   background-size: cover;
 }
 
 section.chromia-slider-sec .slider-content .slider-navigation-4 a.nav-chr {
-  background: url(../../images/Chromunity-nav.jpg) no-repeat;
+  background: url(../../images/slider/Chromunity-nav.jpg) no-repeat;
   background-size: cover;
 }
 
 section.blockchain-sec .blockchain-content {
-  background: url(../../images/blocchain-head-bg.png) no-repeat;
+  background: url(../../images/blockchain/blocchain-head-bg.png) no-repeat;
   background-size: 100%;
 }
 
@@ -1205,7 +1204,7 @@ section.enterprise-sec .enterprise-content .enterprise-row .enterprise-col .ente
 }
 
 .public-power-sec .public-power-col-2 {
-  background: url(../../images/img-elements.png) no-repeat;
+  background: url(../../images/power-public/img-elements.png) no-repeat;
   background-size: 123% 103%;
   background-position-x: 25px;
 }
@@ -1224,19 +1223,19 @@ section.enterprise-sec .enterprise-content .enterprise-row .enterprise-col .ente
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip-1 {
-  background: url(../../images/founder-1-tooltip.png) no-repeat;
+  background: url(../../images/power-public/founder-1-tooltip.png) no-repeat;
   background-size: 100% 100%;
   max-width: 185px;
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip-2 {
-  background: url(../../images/founder-2-tooltip.png) no-repeat;
+  background: url(../../images/power-public/founder-2-tooltip.png) no-repeat;
   background-size: 100% 100%;
   max-width: 185px;
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-tooltip-3 {
-  background: url(../../images/founder-3-tooltip.png) no-repeat;
+  background: url(../../images/power-public/founder-3-tooltip.png) no-repeat;
   background-size: 100% 100%;
   max-width: 185px;
 }
@@ -1268,7 +1267,7 @@ section.enterprise-sec .enterprise-content .enterprise-row .enterprise-col .ente
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog::before {
-  content: url(../../images/popup-shape.png);
+  content: url(../../images/power-public/popup-shape.png);
   position: absolute;
   top: 65px;
   left: -30px;
@@ -1309,7 +1308,7 @@ section.enterprise-sec .enterprise-content .enterprise-row .enterprise-col .ente
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-2 .popup .popup-dialog::after {
-  content: url(../../images/popup-shape-2.png);
+  content: url(../../images/power-public/popup-shape-2.png);
   position: absolute;
   top: 65px;
   right: -30px;
@@ -1325,7 +1324,7 @@ section.enterprise-sec .enterprise-content .enterprise-row .enterprise-col .ente
 }
 
 .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container-3 .popup .popup-dialog::after {
-  content: url(../../images/popup-shape-3.png);
+  content: url(../../images/power-public/popup-shape-3.png);
   position: absolute;
   top: 65px;
   right: -30px;
@@ -1458,19 +1457,15 @@ section.enterprise-sec .enterprise-content .enterprise-row .enterprise-col .ente
   border-color: #1E191E !important;
 }
 
-.newsletter-sec .newsletter-content button {
+.newsletter-sec .newsletter-content input.btn-newsletter {
   width: 100%;
   max-width: 200px;
   margin-left: -90px;
 }
 
-.newsletter-sec .newsletter-content button:hover {
+.newsletter-sec .newsletter-content input.btn-newsletter:hover {
   background: #fff8f8;
-}
-
-.newsletter-sec .newsletter-content button:hover a {
   color: #1E191E;
-  text-decoration: none;
 }
 
 footer .footer-sec .footer-row {
@@ -1516,6 +1511,10 @@ footer .footer-sec .footer-bar p {
   font-size: 14px;
 }
 
+section.mk-main-sec .mk-container .mk-row .mk-col .mk-text p {
+  font-size: 20px;
+}
+
 @media (max-width: 1199px) {
   section.banner-section {
     height: auto;
@@ -1548,13 +1547,15 @@ footer .footer-sec .footer-bar p {
   }
   .relational-border svg {
     left: -93% !important;
-    top: -103% !important;
+    top: -124% !important;
+    -webkit-transform: scaleY(1.8);
+            transform: scaleY(1.8);
   }
   .blockchain-border svg {
-    top: -75% !important;
+    top: 84% !important;
     left: -13% !important;
-    -webkit-transform: scale(0.77);
-            transform: scale(0.77);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
 }
 

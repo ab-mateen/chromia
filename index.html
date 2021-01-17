@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122482523-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122482523-3');
+    </script> -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +23,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>Chromia Web</title>
+
+    <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/images/webclip.jpg" rel="apple-touch-icon">
+
+    <title>Chromia</title>
 </head>
 
 <body>
@@ -26,7 +43,7 @@
             <!-- End Chromia Alert -->
         </div>
         <!-- Language Bar -->
-        <div class="header-lang-bar pt-3">
+        <!-- <div class="header-lang-bar pt-3">
             <div class="lang-bar-container container">
                 <div class="lang-bar-content ml-auto">
                     <div class="lang-bar-row row justify-content-between">
@@ -35,24 +52,24 @@
                         </div>
                         <div class="lang-jap lang-col lang-col">
                             <picture>
-                                <a href="#"><img src="images/lang-japan.png" alt="Japan Flag"></a>
+                                <a href="#"><img src="/images/lang-japan.png" alt="Japan Flag"></a>
                             </picture>
                         </div>
                         <div class="lang-chi lang-col lang-col">
                             <picture>
-                                <a href="#"><img src="images/lang-china.png" alt="Japan Flag"></a>
+                                <a href="#"><img src="/images/lang-china.png" alt="Japan Flag"></a>
                             </picture>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Navigation -->
         <div class="navigation mt-1">
             <div class="nav-container container">
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <!-- Brand -->
-                    <a class="navbar-brand " href="index.html "><img src="images/chromia-logo.png " alt="Chromia Brand "></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/chromia-logo.png " alt="Chromia Brand "></a>
 
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -65,6 +82,7 @@
                             <li class="nav-item link">
                                 <a class="nav-link medium text-offwhite" href="https://rell.chromia.com">Developers</a>
                             </li>
+                            <!--                             
                             <li class="nav-item link dropdown">
                                 <a class="nav-link dropdown-toggle medium text-offwhite" href="# " id="navbardrop1" data-toggle="dropdown">
                       Community
@@ -74,7 +92,7 @@
                                     <a class="dropdown-item" href="#">Link 2</a>
                                     <a class="dropdown-item" href="#">Link 3</a>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="https://blog.chromia.com" id="navbardrop2">
                       Blog
@@ -98,6 +116,7 @@
         </div>
     </header>
     <!-- End Header -->
+
     <!-- Banner Section -->
     <section class="banner-section d-flex justify-content-center align-items-center">
         <!-- Start Banner Container -->
@@ -112,13 +131,18 @@
                             <h1 class="text-offwhite font-heading sm-font-head">blockchain platform</h1>
                             <h1 class="sense text-offwhite text-lg-center font-heading sm-font-head"><span class="banner-span font-main ">that</span> makes sense</h1>
                             <p class="text-offwhite sm-font-main md-mt">Chromia is a blockchain platform, making it easy for people to build decentralized apps in the real world, for a better world.</p>
-                            <div class="banner-email-btn md-mt2">
-                                <p class="sm-font-main md-mt">Join 17.000 others interested in our monthly updates.</p>
-                                <div class="banner-input position-relative">
-                                    <input type="text " class="form-control position-relative btn-border bg-gray " placeholder="Enter your email ">
-                                    <a href="# " class="d-inline-block subBtn btn-border bg-red text-offwhite ">Subscribe</a>
+                            <form action="https://chromaway.us13.list-manage.com/subscribe/post?u=40717d7a493ac7c48b9533d09&amp;id=78394188c0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                                <div class="banner-email-btn md-mt2">
+                                    <label class="sm-font-main md-mt">Join the ranks of more than 28.000 interested in our monthly updates!</label>
+                                    <div class="banner-input position-relative">
+                                        <input type="text " class="form-control position-relative btn-border bg-gray" placeholder="Enter your email">
+                                        <!--    real people should not fill this in and expect good things - do not remove this or risk form bot signups   -->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            <input type="text" name="b_40717d7a493ac7c48b9533d09_78394188c0" tabindex="-1" value=""></div>
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-lower" class="d-inline-block subBtn btn-border bg-red text-offwhite">
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <!-- End Banner Col 1 -->
@@ -126,7 +150,7 @@
                     <div class="col-md-6 md-mt2">
                         <div class="banner-img banner-col pl-5 md-pl0">
                             <picture>
-                                <img src="images/banner-bubbles.png " alt="Bubbles ">
+                                <img src="images/banner/banner-bubbles.png" alt="Bubbles">
                             </picture>
                         </div>
                     </div>
@@ -151,7 +175,7 @@
                             <a href="https://blog.chromia.com/reasons-for-rell-compactness/" class="d-block text-decoration-none text-offwhite">
                                 <div class="services-col-img">
                                     <picture>
-                                        <img src="images/service-col-1.png" alt="small rocket">
+                                        <img src="images/services/service-col-1.png" alt="small rocket">
                                     </picture>
                                 </div>
                                 <h4 class="my-4 font-weight-bold sm-font-head2">Deliver Faster</h4>
@@ -165,7 +189,7 @@
                         <div class="services-col services-col-2">
                             <div class="services-col-img">
                                 <picture>
-                                    <img src="images/service-col-2.png" alt="three boxes">
+                                    <img src="images/services/service-col-2.png" alt="three boxes">
                                 </picture>
                             </div>
                             <h4 class="my-4 font-weight-bold sm-font-head2">Unique Architecture</h4>
@@ -178,7 +202,7 @@
                         <div class="services-col services-col-2 services-col-3 ">
                             <div class="services-col-img ">
                                 <picture>
-                                    <img src="images/service-col-3.png" alt="cube">
+                                    <img src="images/services/service-col-3.png" alt="cube">
                                 </picture>
                             </div>
                             <h4 class="my-4 font-weight-bold sm-font-head2">Plays well with Ethereum</h4>
@@ -212,7 +236,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/chain-of-alliance-main.png" alt="Screenshot Chain Of Alliance Game">
+                                                <img src="images/slider/chain-of-alliance-main.png" alt="Screenshot Chain Of Alliance Game">
                                             </picture>
                                         </div>
                                     </div>
@@ -223,7 +247,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="https://www.chainofalliance.com" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">Chain of Alliance</a></h4>
                                             <p class="sm-font-main mb-3">Chain of Alliance is an “auto battler” game that runs completely on the Chromia blockchain. It was developed by our community pioneers Dennis Kirsch and Simon Sorgenfrei, who combined the advantages of Chromia
                                                 blockchain with an existing game genre.</p>
-                                            <a href="https://www.chainofalliance.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="https://www.chainofalliance.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -239,7 +263,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/mod-1.jpg" alt="Screenshot Chain Of Alliance Game">
+                                                <img src="images/slider/mod-1.jpg" alt="Screenshot Chain Of Alliance Game">
                                             </picture>
                                         </div>
                                     </div>
@@ -251,7 +275,7 @@
                                             <p class="sm-font-main mb-3">Mines of Dalarnia is an action-adventure platform-mining game in which the player controls a character and guides them through various blocks of earth, to discover and collect minerals of multiple rarities.
                                                 The game also includes a blockchain based real-estate market.</p>
                                             <!-- <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p> -->
-                                            <a href="http://minesofdalarnia.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="http://minesofdalarnia.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -267,7 +291,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1 rounded">
                                             <picture>
-                                                <img src="images/krystopia.jpg" alt="Screenshot Krystopia: Nova’s Journey Game">
+                                                <img src="images/slider/krystopia.jpg" alt="Screenshot Krystopia: Nova’s Journey Game">
                                             </picture>
                                         </div>
                                     </div>
@@ -278,7 +302,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="https://krystopiagame.com" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">Krystopia: Nova’s Journey</a></h4>
                                             <p class="sm-font-main mb-3">Krystopia: Nova’s Journey is an immersive puzzle game developed by Antler Interactive. Players need to solve challenging puzzles and figure out the mystery of a new planet to progress in a game. The game connects
                                                 to Mines of Dalarnia using Chromia’s innovative cross-game mechanism.</p>
-                                            <a href="https://krystopiagame.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="https://krystopiagame.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -294,7 +318,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1 rounded">
                                             <picture>
-                                                <img src="images/my-neighbor-alice.jpg" alt="Screenshot My Neighbor Alice Game">
+                                                <img src="images/slider/my-neighbor-alice.jpg" alt="Screenshot My Neighbor Alice Game">
                                             </picture>
                                         </div>
                                     </div>
@@ -304,7 +328,7 @@
                                         <div class="slider-col slider-col-2">
                                             <h4 class="font-main-bold mb-3"><a href="https://www.myneighboralice.com" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">My Neighbor Alice</a></h4>
                                             <p class="sm-font-main mb-3">My Neighbor Alice is a multiplayer blockchain builder game, where anyone can buy and own virtual islands, collect and build exciting items and meet new friends.</p>
-                                            <a href="https://www.myneighboralice.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="https://www.myneighboralice.com" target="_blank" class="d-inline-block text-yellow">Play Now <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -352,7 +376,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/gaw-2.png" alt="Screenshot Green Assets Wallet">
+                                                <img src="images/slider/gaw-2.png" alt="Screenshot Green Assets Wallet">
                                             </picture>
                                         </div>
                                     </div>
@@ -363,7 +387,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="https://greenassetswallet.org" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">Green Assets Wallet</a></h4>
                                             <p class="sm-font-main mb-3">Green Assets Wallet is the first enterprise decentralized app on Chromia designed for green bond validation and impact reporting, co-created by a consortium of leading capital market actors, green finance experts
                                                 and technology innovators.</p>
-                                            <a href="https://greenassetswallet.org" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="https://greenassetswallet.org" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -379,7 +403,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/lac-propertchain.jpg" alt="Screenshot LAC PropertyChain">
+                                                <img src="images/slider/lac-propertchain.jpg" alt="Screenshot LAC PropertyChain">
                                             </picture>
                                         </div>
                                     </div>
@@ -390,7 +414,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="http://lacpropertychain.com" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">LAC PropertyChain</a></h4>
                                             <p class="sm-font-main mb-3">LAC PropertyChain is a land administration initiative in Latin America and the Caribbean powered by the Chromia public blockchain. Sponsored by the Inter-American Development Bank, this project has developed
                                                 an open-source application that facilitates property transactions.</p>
-                                            <a href="http://lacpropertychain.com" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="http://lacpropertychain.com" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -406,7 +430,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/cap-chap.png" alt="Screenshot CapChap">
+                                                <img src="images/slider/cap-chap.png" alt="Screenshot CapChap">
                                             </picture>
                                         </div>
                                     </div>
@@ -416,7 +440,7 @@
                                         <div class="slider-col slider-col-2">
                                             <h4 class="font-main-bold mb-3"><a href="http://capchap.se" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">Capchap</a></h4>
                                             <p class="sm-font-main mb-3">CapChap is a legaltech startup providing a blockchain based shareholder registry and corporate actions application based on the Chromia Platform.</p>
-                                            <a href="http://capchap.se" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="http://capchap.se" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -462,7 +486,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/hedget.jpg" alt="Screenshot Hedget">
+                                                <img src="images/slider/hedget.jpg" alt="Screenshot Hedget">
                                             </picture>
                                         </div>
                                     </div>
@@ -473,7 +497,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="http://hedget.com" target="_blank" class="text-decoration-none text-offwhite sm-font-head2">Hedget</a></h4>
                                             <p class="sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved.</p>
                                             <p class="sm-font-main mt-2 mb-3">At the end of the day, going forward, a new normal that has evolved</p>
-                                            <a href="http://hedget.com" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="http://hedget.com" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -504,7 +528,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/freela.jpg" alt="Screenshot Freela">
+                                                <img src="images/slider/freela.png" alt="Screenshot Freela">
                                             </picture>
                                         </div>
                                     </div>
@@ -515,7 +539,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="https://thefreela.com" target="_blank" class="text-decoration-none text-offwhite">Freela</a></h4>
                                             <p class="sm-font-main mb-3">Freela is a decentralised Chromia-based platform which offers an innovative mechanism to match skilled freelancers to jobs worldwide. It is a DeFi powered, peer-to-peer self-governing DAO which offers a “truly
                                                 free freelancing” with zero-commissions. </p>
-                                            <a href="https://thefreela.com" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="https://thefreela.com" target="_blank" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -531,7 +555,7 @@
                                     <div class="col-md-9">
                                         <div class="slider-col slider-col-1">
                                             <picture>
-                                                <img src="images/Chromunity.jpg" alt="Screenshot Chromunity">
+                                                <img src="images/slider/Chromunity.jpg" alt="Screenshot Chromunity">
                                             </picture>
                                         </div>
                                     </div>
@@ -542,7 +566,7 @@
                                             <h4 class="font-main-bold mb-3"><a href="https://testnet.chromunity.com/" target="_blank" class="text-decoration-none text-offwhite">Chromunity</a></h4>
                                             <p class="sm-font-main mb-3">Operating entirely on top of the Chromia relational blockchain making it the melting pot for the Chromia community. It is our take on a fully decentralized social media platform where users engage on their own
                                                 terms by voting mechanisms and other cool features.</p>
-                                            <a href="https://testnet.chromunity.com/" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/right-arrow.png" alt=""></span> </a>
+                                            <a href="https://testnet.chromunity.com/" class="d-inline-block text-yellow">Visit Website <span class="d-inline-block ml-2 align-middle"><img src="images/slider/right-arrow.png" alt=""></span> </a>
                                         </div>
                                     </div>
                                     <!-- End Slider Column 2 -->
@@ -597,7 +621,7 @@
                         <div class="blockchain-col blockchain-col-1 position-relative">
                             <div class="blockchain-col-img blockchain-col-img-1">
                                 <picture>
-                                    <img src="images/blockchain-bubble-1.png" alt="Floating Bubbble">
+                                    <img src="images/blockchain/blockchain-bubble-1.png" alt="Floating Bubbble">
                                 </picture>
                             </div>
                             <div class="blockchain-col-txt">
@@ -690,7 +714,7 @@
                         <div class="blockchain-col blockchain-col-2 position-relative">
                             <div class="blockchain-col-img">
                                 <picture>
-                                    <img src="images/blockchain-bubble.png" alt="BlockChain Bubble">
+                                    <img src="images/blockchain/blockchain-bubble.png" alt="BlockChain Bubble">
                                 </picture>
                             </div>
                             <div class="blockchain-col-txt">
@@ -821,7 +845,7 @@
                         <div class="ethereum-col ethereum-col-1">
                             <div class="ethereum-col-img">
                                 <picture>
-                                    <img src="images/layer-eth.png" alt="">
+                                    <img src="/images/layer-eth.png" alt="">
                                 </picture>
                             </div>
                             <h5 class="mt-4 mb-2 sm-font-head2">Layer Two to Ethereum</h5>
@@ -835,7 +859,7 @@
                         <div class="ethereum-col ethereum-col-2">
                             <div class="ethereum-col-img">
                                 <picture>
-                                    <img src="images/eth-independ-chain.png" alt="">
+                                    <img src="/images/eth-independ-chain.png" alt="">
                                 </picture>
                             </div>
                             <h4 class="mt-4 mb-2">Independent public blockchain</h4>
@@ -850,7 +874,7 @@
                         <div class="ethereum-col ethereum-col-3">
                             <div class="ethereum-col-img">
                                 <picture>
-                                    <img src="images/eth-hybrid-chain.png" alt="">
+                                    <img src="/images/eth-hybrid-chain.png" alt="">
                                 </picture>
                             </div>
                             <h4 class="mt-4 mb-2">Hybrid blockchain</h4>
@@ -887,7 +911,7 @@
                         <div class="enterprise-col enterprise-col-1">
                             <div class="enterprise-col-img">
                                 <picture>
-                                    <img src="images/enterprise-col-1.png" alt="circles">
+                                    <img src="images/enterprise/enterprise-col-1.png" alt="circles">
                                 </picture>
                             </div>
                             <h5 class="font-main-bold sm-font-main2 mt-4 mb-2">As an enterprise private or hybrid blockchain.</h5>
@@ -900,7 +924,7 @@
                         <div class="enterprise-col enterprise-col-2">
                             <div class="enterprise-col-img">
                                 <picture>
-                                    <img src="images/enterprise-col-2.png" alt="circles">
+                                    <img src="images/enterprise/enterprise-col-2.png" alt="circles">
                                 </picture>
                             </div>
                             <h5 class="font-main-bold sm-font-main2 mt-4 mb-2">As an independent public blockchain.</h5>
@@ -932,7 +956,7 @@
                         <div class="tools-col tools-col-1">
                             <div class="tools-col-img">
                                 <picture>
-                                    <img src="images/layer-eth.png" alt="">
+                                    <img src="images/try-tools/layer-eth.png" alt="">
                                 </picture>
                             </div>
                             <h4 class="mt-4 mb-3 font-heading sm-font-head2">Rell, a uniquely productivity language</h4>
@@ -951,7 +975,7 @@
                                 <!-- Start Try Tool Col 2 Inner Col 1 -->
                                 <div class="col-sm-6">
                                     <div class="inner-tools-col inner-tools-col-1 mb-4">
-                                        <h5><span><img src="images/layer-eth.png " alt=" "></span> Relational blockchain</h5>
+                                        <h5><span><img src="images/try-tools/layer-eth.png " alt=""></span> Relational blockchain</h5>
                                         <p class="pt-2 ">The power of a blockchain <a href="https://blog.chromia.com/relational-databases-power-blockchain-innovation/" target="_blank" class="text-offwhite">combined</a> with a relational database.</p>
                                     </div>
                                 </div>
@@ -959,7 +983,7 @@
                                 <!-- Start Try Tool Col 2 Inner Col 2 -->
                                 <!-- <div class="col-sm-6 ">
                                     <div class="inner-tools-col inner-tools-col-2 mb-4">
-                                        <h5><span><img src="images/tools-unreal.png " alt=" "></span> Unreal Engine</h5>
+                                        <h5><span><img src="/images/tools-unreal.png " alt=" "></span> Unreal Engine</h5>
                                         <p class="pt-2 ">Bring to the table win-win survival strategies to ensure proactive domination.</p>
                                     </div>
                                 </div> -->
@@ -967,7 +991,7 @@
                                 <!-- Start Try Tool Col 2 Inner Col 3 -->
                                 <!-- <div class="col-sm-6 ">
                                     <div class="inner-tools-col inner-tools-col-3 mb-4">
-                                        <h5><span><img src="images/tools-asset.png" alt=" "></span> Asset trading</h5>
+                                        <h5><span><img src="/images/tools-asset.png" alt=" "></span> Asset trading</h5>
                                         <p class="pt-2 sm-font-main">Bring to the table win-win survival strategies to ensure proactive domination.</p>
                                     </div>
                                 </div> -->
@@ -975,7 +999,7 @@
                                 <!-- Start Try Tool Col 2 Inner Col 4 -->
                                 <div class="col-sm-6">
                                     <div class="inner-tools-col inner-tools-col-4 mb-4">
-                                        <h5><span><img src="images/eth-hybrid-chain.png" alt=" "></span> Block Explorer</h5>
+                                        <h5><span><img src="images/try-tools/eth-hybrid-chain.png" alt=" "></span> Block Explorer</h5>
                                         <p class="pt-2 sm-font-main">Chromia <a href="https://explorer-testnet.chromia.com/" target="_blank" class="text-offwhite">Explorer</a> is probably the first fully decentralized blockchain explorer, which allows users to visualize transactions
                                             and activities on different chains.</p>
                                     </div>
@@ -984,7 +1008,7 @@
                                 <!-- Start Try Tool Col 2 Inner Col 5 -->
                                 <div class="col-sm-6">
                                     <div class="inner-tools-col inner-tools-col-5">
-                                        <h5><span><img src="images/eth-independ-chain.png" alt=""></span> Single sign-on</h5>
+                                        <h5><span><img src="images/try-tools/eth-independ-chain.png" alt=""></span> Single sign-on</h5>
                                         <p class="pt-2 sm-font-main">The <a href="https://blog.chromia.com/chromia-sso-the-whys-and-the-whats/" target="_blank" class="text-offwhite">Chromia Vault Single Sign On</a> (SSO) is a unique feature created to reduce password entering without
                                             compromising users’ security. </p>
                                     </div>
@@ -993,7 +1017,7 @@
                                 <!-- Start Try Tool Col 2 Inner Col 6 -->
                                 <div class="col-sm-6">
                                     <div class="inner-tools-col inner-tools-col-6">
-                                        <h5><span><img src="images/tools-vault.png" alt=" "></span> Chromia Vault</h5>
+                                        <h5><span><img src="images/try-tools/tools-vault.png" alt=" "></span> Chromia Vault</h5>
                                         <p class="pt-2 sm-font-main"><a href="http://vault-testnet.chromia.com/" target="_blank" class="text-offwhite">Chromia Vault</a> is a wallet software that allows users to manage their tokens and dapps on the Chromia blockchain.</p>
                                     </div>
                                 </div>
@@ -1049,7 +1073,7 @@
                                         <!-- Start Founder Image 1 -->
                                         <div class="founder-img">
                                             <picture>
-                                                <img src="images/founder-1.png" alt="">
+                                                <img src="images/power-public/founder-1.png" alt="">
                                             </picture>
                                         </div>
                                         <!-- End Founder Image 1 -->
@@ -1102,7 +1126,7 @@
                                             <!-- Start Founder Img 2  -->
                                             <div class="founder-img">
                                                 <picture>
-                                                    <img src="images/founder-2.png" alt="">
+                                                    <img src="images/power-public/founder-2.png" alt="">
                                                 </picture>
                                             </div>
                                             <!-- End Founder Img 2  -->
@@ -1150,7 +1174,7 @@
                                             <!-- Start Founder Image 3  -->
                                             <div class="founder-img">
                                                 <picture>
-                                                    <img src="images/founder-3.png" alt="">
+                                                    <img src="images/power-public/founder-3.png" alt="">
                                                 </picture>
                                             </div>
                                             <!-- End Founder Image 3  -->
@@ -1214,7 +1238,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-1 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-1.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-1.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1223,7 +1247,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-2 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-2.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-2.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1232,7 +1256,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-3 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-3.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-3.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1241,7 +1265,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-4 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-4.png" alt="21M Capital">
+                                <img src="/images/backer-col-4.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1250,7 +1274,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-5 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-5.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-5.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1259,7 +1283,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-6 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-6.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-6.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1268,7 +1292,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-7 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-7.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-7.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1277,7 +1301,7 @@
                     <div class="col-md-3">
                         <div class="backer-col backer-col-8 bg-dark-2 mb-3 d-flex justify-content-center align-items-center">
                             <picture>
-                                <img src="images/backer-col-8.png" alt="21M Capital">
+                                <img src="images/backers/backer-col-8.png" alt="21M Capital">
                             </picture>
                         </div>
                     </div>
@@ -1305,7 +1329,7 @@
                             <div class="col-sm-4">
                                 <div class="community-col-img">
                                     <picture>
-                                        <img src="images/community-col-1.png" alt="">
+                                        <img src="images/community/community-col-1.png" alt="">
                                     </picture>
                                 </div>
                             </div>
@@ -1333,7 +1357,7 @@
                             <div class="col-sm-4">
                                 <div class="community-col-img">
                                     <picture>
-                                        <img src="images/community-col-2.png" alt="">
+                                        <img src="images/community/community-col-2.png" alt="">
                                     </picture>
                                 </div>
                             </div>
@@ -1398,7 +1422,7 @@
             <!-- Start Latest from Chromia Heading -->
             <div class="blog-head d-flex justify-content-between">
                 <h3 class="font-heading sm-font-head">Latest from Chromia</h3>
-                <a href="#" class="d-inline-block font-main-bold text-yellow">To the Chromia Blog <span class="d-inline-block ml-2"><img src="images/blog-arrow.png" alt=""></span></a>
+                <a href="#" class="d-inline-block font-main-bold text-yellow">To the Chromia Blog <span class="d-inline-block ml-2"><img src="images/blog/blog-arrow.png" alt=""></span></a>
             </div>
             <!-- End Latest from Chromia Heading -->
             <div class="blog-post-container mt-4 pt-2 md-mt2 md-pt0">
@@ -1515,17 +1539,24 @@
             <!-- Start Newsletter Content -->
             <div class="newsletter-content py-3 mx-auto">
                 <h2 class="font-heading text-cdark text-center mb-4 sm-font-head">Subscribe to our newsletter</h2>
-                <p class="text-cdark mb-4 text-center sm-font-main">Join 17.000 others interested in our monthly updates.</p>
-                <div class="newsletter-input-container d-flex">
-                    <input type="text" class="form-control btn-border border bg-transparent" placeholder="Enter your email">
-                    <button class="btn btn-newsletter btn-border bg-dark-2"><a href="#" class="d-block text-offwhite">Subscribe</a></button>
-                </div>
+                <form action="https://chromaway.us13.list-manage.com/subscribe/post?u=40717d7a493ac7c48b9533d09&amp;id=78394188c0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                    <label class="text-cdark mb-4 text-center sm-font-main d-block">Join 28.000 others interested in our monthly updates.</label>
+                    <div class="newsletter-input-container d-flex">
+                        <input type="text" class="form-control btn-border border bg-transparent" placeholder="Enter your email" required>
+                        <!-- <button class="btn btn-newsletter btn-border bg-dark-2"><a href="#" class="d-inline-block text-offwhite">Subscribe</a></button> -->
+                        <!--    real people should not fill this in and expect good things - do not remove this or risk form bot signups   -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_40717d7a493ac7c48b9533d09_78394188c0" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-lower" class="btn btn-newsletter btn-border border-0 bg-dark-2 d-inline-block text-offwhite">
+                    </div>
+                </form>
             </div>
             <!-- End Newsletter Content -->
         </div>
         <!-- End Newsletter Container -->
     </section>
     <!-- End Newsletter Section -->
+
     <!-- Start Footer Section -->
     <footer>
         <section class="footer-sec mt-3 pt-5 md-pt2">
@@ -1566,7 +1597,7 @@
                                     <div class="footer-inner-col footer-inner-col-2">
                                         <p class="mb-3">Chromia</p>
                                         <ul>
-                                            <li><a href="" class="text-offwhite">Community</a></li>
+                                            <!-- <li><a href="" class="text-offwhite">Community</a></li> -->
                                             <li><a href="https://blog.chromia.com" class="text-offwhite">Blog</a></li>
                                             <li><a href="#" class="text-offwhite">Press & Media kit</a></li>
                                             <li><a href="https://coinmarketcap.com/currencies/chromia/markets/" target="_blank" class="coin text-offwhite">CoinMarketCap</a></li>
@@ -1579,8 +1610,8 @@
                                     <div class="footer-inner-col footer-inner-col-3">
                                         <p class="mb-3">Developers</p>
                                         <ul>
-                                            <li><a href="#" class="text-offwhite">Developer Portal</a></li>
-                                            <li><a href="#" class="text-offwhite">Web IDE</a></li>
+                                            <!-- <li><a href="#" class="text-offwhite">Developer Portal</a></li>
+                                            <li><a href="#" class="text-offwhite">Web IDE</a></li> -->
                                             <li><a href="#" class="text-offwhite">Documentation</a></li>
                                         </ul>
                                     </div>
