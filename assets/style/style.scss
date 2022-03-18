@@ -1,0 +1,1144 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'framework.scss';
+// Header Style
+header {
+    // Chromia Alert
+    .chromia-alert-container {
+        .alert {
+            border-radius: 0;
+            button {
+                color: $chromia-dark !important;
+                outline: 0;
+                opacity: 1;
+                text-shadow: none;
+                font-weight: 400;
+                font-size: 14px;
+                height: 100%;
+            }
+            p {
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: $chromia-dark;
+                    }
+                }
+            }
+        }
+    }
+    // Header Language Bar
+    .header-lang-bar {
+        .lang-bar-content {
+            max-width: 125px;
+        }
+    }
+    // Navigation
+    .navigation {
+        nav {
+            .navbar-nav {
+                .nav-link {
+                    &:hover {
+                        color: $chromia-logo-pink !important;
+                    }
+                    i {
+                        width: 30px;
+                        height: 30px;
+                        padding: 6px 6px;
+                        font-size: 19px;
+                        &:hover {
+                            background: $chromia-logo-pink;
+                            color: $chromia-offwhite;
+                            transition: .2s;
+                        }
+                    }
+                    &:hover {
+                        .dropdown-menu {
+                            display: inline-block !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Banner Section
+section.banner-section {
+    height: calc(100vh - 131px);
+    .banner-content {
+        .banner-col {
+            h1 {
+                span {
+                    font-size: 18px;
+                }
+            }
+            p {
+                margin: 41px 0 0;
+                font-size: 20px;
+            }
+            .banner-email-btn {
+                margin-top: 57px;
+                max-width: 440px;
+                label {
+                    color: #7B7B7B;
+                    margin-bottom: 16px;
+                    font-size: 18px;
+                }
+                input {
+                    height: 54px;
+                    border: none;
+                    outline: 0;
+                    padding-left: 20px;
+                    color: $chromia-offwhite;
+                    &::placeholder {
+                        color: $chromia-offwhite;
+                        font-size: 18px;
+                    }
+                    &:focus {
+                        background: $chromia-gray;
+                    }
+                }
+                input.subBtn {
+                    text-decoration: none;
+                    height: 40px;
+                    width: 100%;
+                    max-width: 125px;
+                    text-align: center;
+                    // padding-top: 7px;
+                    font-weight: 500;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 15px;
+                    left: unset;
+                    margin: auto;
+                    &:hover {
+                        color: $chromia-offwhite;
+                        transition: .2s;
+                        background-color: $chromia-darkred;
+                        transition: .25s;
+                    }
+                    &:focus {
+                        background-color: $chromia-darkred;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// services Section
+section.services-sec {
+    // padding-bottom: 62px;
+    .services-col {
+        img {
+            max-width: 90px;
+        }
+        h4 {
+            font-family: $NbBold;
+            font-size: 22px;
+        }
+        p {
+            font-family: $NbRegular;
+            max-width: 320px;
+        }
+    }
+    .services-col-1 {
+        a {
+            &:hover {
+                color: $chromia-offwhite;
+            }
+            p {
+                span {
+                    border-bottom: 1px dashed $chromia-purple;
+                }
+                span.sp-seven {
+                    &:after {
+                        content: 'Compared to SQL';
+                        font-size: 14px;
+                        background-image: url(../../images/services/serv-tooltip.png);
+                        background-size: 100% 100%;
+                        max-width: 162px;
+                        padding: 13px 11px 4px;
+                        display: none;
+                        position: absolute;
+                        top: unset;
+                        bottom: -43px;
+                        left: 44px;
+                    }
+                    &:hover::after {
+                        display: inline-block;
+                    }
+                }
+                span.sp-ten {
+                    &:after {
+                        content: 'Compared to other modern Blockchains';
+                        font-size: 14px;
+                        background-image: url(../../images/services/serv-tooltip.png);
+                        background-size: 100% 100%;
+                        max-width: 162px;
+                        padding: 13px 11px 4px;
+                        display: none;
+                        position: absolute;
+                        top: unset;
+                        bottom: -61px;
+                        right: -50px;
+                    }
+                    &:hover::after {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Chromia Slider section
+section.chromia-slider-sec {
+    .slider-content {
+        .slider-col {
+            img {
+                border-radius: 8px;
+            }
+            h4 {
+                a {
+                    &::after {
+                        content: '\2197';
+                        margin-left: 6px;
+                        color: #C7C7C7;
+                    }
+                    &:hover {
+                        color: $chromia-yellow;
+                        &::after {
+                            color: $chromia-yellow;
+                        }
+                    }
+                }
+            }
+            p {
+                color: #C7C7C7;
+                font-size: 15px;
+            }
+            a {
+                &:hover {
+                    color: $chromia-yellow;
+                }
+            }
+        }
+        .slider-navigation {
+            // margin-left: auto;
+            // max-width: 1120px;
+            a {
+                min-height: 122px;
+                border-radius: 8px;
+                padding-bottom: 7px;
+                &:focus {
+                    border: 2px solid $chromia-yellow;
+                }
+            }
+            a.nav-coa {
+                background: url(../../images/slider/chain-of-alliance.jpg) no-repeat;
+                background-size: cover;
+            }
+            a.nav-mod {
+                background: url(../../images/slider/nav-mod.png) no-repeat;
+                background-size: cover;
+            }
+            a.nav-kry {
+                background: url(../../images/slider/nav-kry.png) no-repeat;
+                background-size: cover;
+            }
+            a.nav-mna {
+                background: url(../../images/slider/nav-mna.png) no-repeat;
+                background-size: cover;
+            }
+            .gamesr-nav {
+                width: 24%;
+            }
+        }
+        .slider-navigation-2 {
+            a.nav-gaw {
+                background: url(../../images/slider/gaw-2.png) no-repeat;
+                background-size: cover;
+            }
+            a.nav-lac {
+                background: url(../../images/slider/nav-lac.jpg) no-repeat;
+                background-size: cover;
+            }
+            a.nav-cap {
+                background: url(../../images/slider/cap-chap.png) no-repeat;
+                background-size: cover;
+            }
+        }
+        .slider-navigation-4 {
+            a.nav-fre {
+                background: url(../../images/slider/freela-nav.jpg) no-repeat;
+                background-size: cover;
+            }
+            a.nav-chr {
+                background: url(../../images/slider/Chromunity-nav.jpg) no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+// BlockChain Section
+section.blockchain-sec {
+    .blockchain-content {
+        background: url(../../images/blockchain/blocchain-head-bg.png) no-repeat;
+        background-size: 100%;
+        .blockchain-head {
+            max-width: 580px;
+            h2 {
+                font-size: 59px;
+                span {
+                    font-size: 35px;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.3;
+            }
+        }
+        .blockchain-text {
+            max-width: 470px;
+            span {
+                font-family: $NbBold;
+                font-size: 20px;
+            }
+            .span-1 {
+                border: 1px solid $chromia-pink;
+                border-radius: 10px;
+                background: #53384A;
+            }
+            .span-2 {
+                border: 1px solid $chromia-purple;
+                border-radius: 10px;
+                background: #411D41;
+            }
+            .span-3 {
+                border-radius: 10px;
+                background: $chromia-red;
+            }
+        }
+        .blockhain-row {
+            max-width: 1040px;
+            padding-top: 100px;
+            // border-bottom: 1px solid rgba(255, 248, 248, 0.4);
+            .blockchain-col-1 {
+                border: 2px solid $chromia-pink;
+                border-radius: 7px;
+            }
+            .blockchain-col-2 {
+                border: 2px solid $chromia-purple;
+                border-radius: 7px;
+                .blockchain-col-content {
+                    h5 {
+                        margin: 23px 0 19px 0;
+                    }
+                    // ul {
+                    //     list-style: none;
+                    //     .li-1 {
+                    //         &::before {
+                    //             content: '1.';
+                    //             font-family: $Battlefin;
+                    //             color: #CB92F0;
+                    //         }
+                    //     }
+                    //     .li-2 {
+                    //         &::before {
+                    //             content: '2.';
+                    //             font-family: $Battlefin;
+                    //             color: #CB92F0;
+                    //         }
+                    //     }
+                    //     .li-3 {
+                    //         &::before {
+                    //             content: '3.';
+                    //             font-family: $Battlefin;
+                    //             color: #CB92F0;
+                    //         }
+                    //     }
+                    // }
+                    .blockchain-col-inner {
+                        padding-right: 96px;
+                    }
+                    .custm-list-container {
+                        .custm-list {
+                            .list-num {
+                                p {
+                                    font-size: 26px;
+                                }
+                            }
+                            .list-content {
+                                width: 88%
+                            }
+                        }
+                    }
+                }
+            }
+            .blockchain-col {
+                .blockchain-col-img {
+                    position: absolute;
+                    top: -9%;
+                    right: 12%;
+                    bottom: unset;
+                    left: unset;
+                    width: 100%;
+                    max-width: 134px;
+                }
+                // .blockChain-col-img-1 {
+                //     top: -9%;
+                // }
+                .blockchain-col-txt {
+                    padding: 32px 20px 20px 30px;
+                    h2 {
+                        font-size: 38px;
+                    }
+                    h5 {
+                        font-size: 21px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 1.3;
+                    }
+                    p.blockchain-content-1 {
+                        margin-bottom: 12px;
+                    }
+                    p.blockchain-content-3 {
+                        margin: 12px 0 20px;
+                    }
+                    .power-content {
+                        h5 {
+                            margin-bottom: 6px;
+                        }
+                        p {
+                            max-width: 430px;
+                        }
+                    }
+                    .matter-of-fact {
+                        h5 {
+                            font-size: 20px !important;
+                        }
+                        .matter-of-fact-row {
+                            // align-items: flex-end;
+                            .matter-main-col {
+                                width: 12%;
+                                .matter-col {
+                                    background: rgba(245, 238, 238, 0.4);
+                                    // height: 100%;
+                                }
+                                p {
+                                    color: #F5EEEE;
+                                    opacity: 0.6;
+                                }
+                                p.pvalue-sql {
+                                    color: $chromia-pink !important;
+                                    opacity: 1 !important;
+                                }
+                                .sql {
+                                    min-height: 96px;
+                                    background: $chromia-pink;
+                                    p {
+                                        color: $chromia-dark !important;
+                                        opacity: 1 !important;
+                                    }
+                                }
+                            }
+                            .python {
+                                min-height: 74px;
+                            }
+                            .java {
+                                min-height: 73px;
+                            }
+                            .shell {
+                                min-height: 65px;
+                            }
+                            .cc {
+                                min-height: 60px;
+                            }
+                            .php {
+                                min-height: 47px;
+                            }
+                            .cplus {
+                                min-height: 45px;
+                            }
+                        }
+                        p.among {
+                            padding: 0 7px 10px 0;
+                        }
+                    }
+                }
+            }
+            .blockchain-scndry-txt {
+                width: 42%;
+                margin: 58px auto 0;
+                h5 {
+                    font-size: 22px;
+                }
+                h2 {
+                    font-size: 57px;
+                    line-height: 1.0;
+                }
+                p {
+                    margin-top: 12px;
+                    line-height: 1.3;
+                }
+                a {
+                    max-width: 230px;
+                    padding: 9px 0;
+                    font-size: 17px;
+                    &:hover {
+                        color: $chromia-offwhite;
+                        transition: .2s;
+                    }
+                }
+                .relational-border {
+                    svg {
+                        position: absolute;
+                        // left: -78%;
+                        top: -111%;
+                        // left: -340px;
+                        // top: -309px;
+                        left: -76%;
+                        width: 320px;
+                        height: 500px;
+                        z-index: -1;
+                    }
+                }
+                .blockchain-border {
+                    svg {
+                        position: absolute;
+                        // top: -280px;
+                        // left: -11px;
+                        top: -101%;
+                        // left: 3%;
+                        // height: 384px;
+                        left: -17%;
+                        height: 300px;
+                        width: 555px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Plays with Ethereumy Section
+.ethereum-content {
+    border-top: 1px solid #414141;
+    border-bottom: 1px solid #414141;
+    .ethereum-head {
+        max-width: 535px;
+        span {
+            vertical-align: top;
+            img {
+                max-width: 64px;
+                margin-right: 30px;
+            }
+        }
+        h2 {
+            span {
+                font-size: 20px;
+                vertical-align: middle;
+            }
+        }
+    }
+    h3 {
+        font-size: 27px;
+    }
+    .ethereum-row {
+        .ethereum-col-content {
+            p {
+                max-width: 550px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+// Enterprise Blockchain Section
+section.enterprise-sec {
+    .enterprise-content {
+        .enterprise-head {
+            max-width: 720px;
+            margin: auto;
+            h2 {
+                font-size: 52px;
+            }
+        }
+        .enterprise-row {
+            max-width: 870px;
+            margin: auto;
+            .enterprise-col {
+                .enterprise-col-img {
+                    img {
+                        margin: auto;
+                        max-width: 260px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Try Section
+.tools-sec {
+    .tools-content {
+        .tools-head {
+            max-width: 600px;
+            h2 {
+                font-size: 51px;
+                span {
+                    font-size: 30px;
+                }
+            }
+        }
+        .tools-sec-row {
+            .tools-col {
+                img {
+                    max-width: 100px;
+                }
+                h4 {
+                    font-size: 26px;
+                }
+                p {
+                    a {
+                        text-decoration: underline;
+                        &:hover {
+                            color: $chromia-offwhite;
+                        }
+                    }
+                }
+                a {
+                    max-width: 230px;
+                    &:hover {
+                        color: $chromia-dark;
+                        transition: .2s;
+                    }
+                }
+            }
+            .tools-col-2 {
+                border: 2px solid $chromia-gray;
+                img {
+                    max-width: 35px;
+                    margin-right: 10px;
+                }
+                .inner-tools-col {
+                    p {
+                        margin-left: 52px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Public Power section
+.public-power-sec {
+    .public-power-col-1 {
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .public-power-col-2 {
+        background: url(../../images/power-public/img-elements.png) no-repeat;
+        background-size: 123% 103%;
+        background-position-x: 25px;
+        .public-power-col-2-row {
+            .founde-img {
+                max-width: 220px;
+            }
+            .founder-tooltip {
+                margin: 0 0 -55px 22px;
+                position: relative;
+                p {
+                    padding: 10px 0 31px 18px;
+                }
+            }
+            .founder-tooltip-1 {
+                background: url(../../images/power-public/founder-1-tooltip.png) no-repeat;
+                background-size: 100% 100%;
+                max-width: 185px;
+            }
+            .founder-tooltip-2 {
+                background: url(../../images/power-public/founder-2-tooltip.png) no-repeat;
+                background-size: 100% 100%;
+                max-width: 185px;
+            }
+            .founder-tooltip-3 {
+                background: url(../../images/power-public/founder-3-tooltip.png) no-repeat;
+                background-size: 100% 100%;
+                max-width: 185px;
+            }
+            .founder-txt {
+                position: absolute;
+                top: unset;
+                left: unset;
+                right: -33%;
+                bottom: 5%;
+                width: fit-content;
+                margin: 8px auto;
+            }
+            .founder-popup-container {
+                width: 187%;
+                position: absolute;
+                top: 32px;
+                bottom: 0;
+                right: 0;
+                left: 265px;
+                margin: auto;
+                z-index: 1;
+                transition: .3s;
+                display: none;
+                .popup {
+                    .popup-dialog {
+                        &::before {
+                            content: url(../../images/power-public/popup-shape.png);
+                            position: absolute;
+                            top: 65px;
+                            left: -30px;
+                        }
+                        .popup-head {
+                            border-top-left-radius: 7px;
+                            border-top-right-radius: 7px;
+                            button {
+                                border: none;
+                                outline: 0;
+                                &:hover {
+                                    color: $chromia-offwhite;
+                                    opacity: 1 !important;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        .popup-content {
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .founder-popup-container-2 {
+                left: -730px;
+                top: 15px;
+                .popup {
+                    .popup-dialog {
+                        &::before {
+                            display: none;
+                        }
+                        &::after {
+                            content: url(../../images/power-public/popup-shape-2.png);
+                            position: absolute;
+                            top: 65px;
+                            right: -30px;
+                        }
+                    }
+                }
+            }
+            .founder-popup-container-3 {
+                left: -730px;
+                top: 15px;
+                .popup {
+                    .popup-dialog {
+                        &::before {
+                            display: none;
+                        }
+                        &::after {
+                            content: url(../../images/power-public/popup-shape-3.png);
+                            position: absolute;
+                            top: 65px;
+                            right: -30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .modal {
+        .modal-dialog {
+            max-width: 415px;
+            height: fit-content;
+            /* margin: auto; */
+            top: 210px;
+            bottom: 0;
+            left: 294px;
+            right: 0;
+        }
+    }
+}
+
+// Backers Section
+.backers-sec {
+    .backers-content {
+        h3 {
+            font-size: 34px;
+        }
+        .backers-row {
+            .backer-col {
+                min-height: 140px;
+                border-radius: 8px;
+                img {
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}
+
+// Community Section
+.community-sec {
+    h3 {
+        font-size: 34px;
+    }
+    .community-col {
+        img {
+            max-width: 140px;
+        }
+        p {
+            max-width: 303px;
+            line-height: 1.4;
+        }
+        .community-txt {
+            .client-name {
+                max-width: 315px;
+                margin-left: auto;
+                h6 {
+                    font-size: 18px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: $chromia-offwhite;
+                        width: 35px;
+                        height: 2px;
+                        top: 0;
+                        bottom: 0;
+                        left: -14%;
+                        right: unset;
+                        margin: auto;
+                    }
+                }
+            }
+            a {
+                width: 260px;
+            }
+        }
+    }
+}
+
+// Join Community Section
+.join-community-sec {
+    padding: 84px 0;
+    .join-community-row {
+        .join-community-col {
+            h3 {
+                font-size: 44px;
+                color: #000;
+            }
+            .btn-friendly-2 {
+                border: 1px solid $chromia-dark;
+                &:hover {
+                    color: $chromia-offwhite;
+                }
+            }
+            a {
+                width: 200px;
+            }
+        }
+    }
+}
+
+// Blog Section
+.blog-sec {
+    .blog-head {
+        h3 {
+            font-size: 34px;
+        }
+        a {
+            &:hover {
+                color: $chromia-yellow;
+            }
+        }
+    }
+    .blog-post-container {
+        .blog-row {
+            a {
+                &:hover {
+                    color: $chromia-offwhite;
+                }
+            }
+            .blog-col {
+                border: 1px solid #9A9A9A;
+                // min-height: 256px;
+                h5 {
+                    font-size: 22px;
+                }
+            }
+            .blog-col-2 {
+                // border-color: $chromia-red;
+                p.up-event {
+                    top: -15px;
+                    z-index: 1;
+                    padding: 3px 5px;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+
+// Newsletter Section
+.newsletter-sec {
+    .newsletter-content {
+        max-width: 580px;
+        h2 {
+            font-size: 50px;
+        }
+        input {
+            height: 60px;
+            border-color: $chromia-dark !important;
+        }
+        input.btn-newsletter {
+            width: 100%;
+            max-width: 200px;
+            margin-left: -90px;
+            &:hover {
+                background: $chromia-offwhite;
+                color: $chromia-dark;
+            }
+        }
+    }
+}
+
+// Footer Section
+footer {
+    .footer-sec {
+        .footer-row {
+            border-bottom: 1px solid #4A4A4A;
+            .footer-col {
+                img {
+                    max-width: 190px;
+                }
+                a {
+                    i {
+                        font-size: 25px;
+                        color: $chromia-offwhite;
+                        &:hover {
+                            color: $chromia-logo-pink;
+                            transition: .2s;
+                        }
+                    }
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        a {
+                            margin-bottom: 3px;
+                            &:hover {
+                                color: $chromia-logo-pink;
+                                transition: .2s;
+                                text-decoration: none;
+                            }
+                        }
+                        a.coin {
+                            &::after {
+                                content: '\2197';
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bar {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// MediaKit Page
+section.mk-main-sec {
+    .mk-container {
+        .mk-row {
+            .mk-col {
+                .mk-text {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 1199px) {
+    section.banner-section {
+        height: auto;
+    }
+}
+
+@media (max-width: 1023px) {
+    .blockchain-border svg {
+        top: -94% !important;
+        left: -7% !important;
+        height: 370px !important;
+    }
+    .relational-border svg {
+        left: -84% !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 999px) {
+    .relational-border svg {
+        top: -103% !important;
+    }
+    .blockchain-border svg {
+        top: -88% !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .blockchain-scndry-txt {
+        width: 52% !important;
+    }
+    .relational-border svg {
+        left: -93% !important;
+        top: -124% !important;
+        transform: scaleY(1.8);
+    }
+    .blockchain-border svg {
+        top: --84% !important;
+        left: -13% !important;
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 768px) {
+    .relational-border svg,
+    .blockchain-border svg {
+        display: none !important;
+    }
+    .blockchain-scndry-txt {
+        width: 100% !important;
+    }
+    .col-md-4.power-public-col-main {
+        justify-content: unset !important;
+    }
+    // .public-power-inner-col.public-power-inner-col-1 {
+    //     margin-right: auto;
+    //     margin-left: unset;
+    // }
+    .public-power-inner-col {
+        max-width: 220px !important;
+        margin-right: auto;
+    }
+    .h-100 {
+        height: auto !important;
+    }
+    .founder-popup-container {
+        width: 159% !important;
+        top: -32px !important;
+    }
+    .founder-popup-container-2,
+    .founder-popup-container-3 {
+        left: 265px !important;
+    }
+    .founder-popup-container-2 .popup-dialog,
+    .founder-popup-container-3 .popup-dialog {
+        &::after {
+            display: none !important;
+        }
+    }
+    .founder-popup-container-2 .popup-dialog {
+        &::before {
+            content: url(../../images/popup-shape-2-md.png) !important;
+            display: inline-block !important;
+        }
+    }
+    .founder-popup-container-3 .popup-dialog {
+        &::before {
+            content: url(../../images/popup-shape-3-md.png) !important;
+            display: inline-block !important;
+        }
+    }
+}
+
+@media (max-width: 595px) {
+    .container {
+        padding: 0 20px;
+    }
+    .blog-head {
+        flex-direction: column;
+    }
+    .founder-popup-container,
+    .founder-popup-container-2,
+    .founder-popup-container-3 {
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        &::before {
+            display: none !important;
+        }
+    }
+    .public-power-sec .public-power-col-2 .public-power-col-2-row .founder-popup-container .popup .popup-dialog::before {
+        display: none !important;
+    }
+    section.blockchain-sec .blockchain-content .blockhain-row .blockchain-col .blockchain-col-txt .matter-of-fact .matter-of-fact-row .matter-main-col {
+        width: 21%;
+    }
+    .blockchain-col-txt p {
+        font-size: 8px !important;
+    }
+    .slider-navigation {
+        flex-wrap: wrap;
+    }
+    .slider-nav {
+        width: 49%;
+        margin-top: 5px;
+    }
+    .slider-nav-9 {
+        display: none;
+    }
+    // MediaKit Page
+}
+
+@media (max-width: 430px) {
+    .blockchain-col-img {
+        top: -5% !important;
+        right: 4% !important;
+        max-width: 95px !important;
+    }
+    section.blockchain-sec .blockchain-content .blockchain-head h2 span {
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 370px) and (min-width:315px) {
+    .blockchain-col-img {
+        top: -3% !important;
+        right: 1% !important;
+        max-width: 57px !important;
+    }
+}
+
+@media (max-width: 368px) {
+    section.blockchain-sec .blockchain-content .blockchain-text .span-2 {
+        margin-top: 16px;
+    }
+}

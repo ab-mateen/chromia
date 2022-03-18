@@ -1,0 +1,500 @@
+@import 'variables.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1E1E1E;
+    color: #FFF8F8;
+    font-family: 'NBInternational-Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+// Bootstrap Container
+@media (min-width: 992px) {
+    .blockchain-container.container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1700px !important;
+    }
+}
+
+.btn-border {
+    border-radius: $borderoval;
+}
+
+.rounded {
+    border-radius: 8px !important;
+}
+
+.w-50 {
+    width: 49% !important;
+}
+
+@media (min-width: 595px) {
+    .w-24 {
+        width: 24%;
+    }
+}
+
+@media (max-width: 595px) {
+    .sm-w-100 {
+        width: 100% !important;
+    }
+}
+
+
+/* Font styles */
+
+.font-heading {
+    font-family: 'Battlefin-Black';
+}
+
+.font-main {
+    font-family: $NbRegular;
+}
+
+.font-main-bold {
+    font-family: $NbBold;
+}
+
+.light {
+    font-weight: $light;
+}
+
+.regular {
+    font-weight: $regular;
+}
+
+.medium {
+    font-weight: $medium;
+}
+
+.semibold {
+    font-weight: $semibold;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+.extrabold {
+    font-weight: $extrabold;
+}
+
+// FontSize
+h1 {
+    line-height: 0.9em;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+// Colors
+.bg-cdark {
+    background: $chromia-dark;
+}
+
+.bg-dark-2 {
+    background: $chromia-dark-2;
+}
+
+.bg-light-dark {
+    background: $chromia-light-dark;
+}
+
+.bg-gray {
+    background: $chromia-gray;
+}
+
+.bg-red {
+    background: $chromia-red;
+}
+
+.bg-darkred {
+    background: $chromia-darkred;
+}
+
+.bg-orange {
+    background: $chromia-orange;
+}
+
+.bg-orangedark {
+    background: $chromia-orangedark;
+}
+
+.bg-purple {
+    background: $chromia-purple;
+}
+
+.bg-purpledark {
+    background: $chromia-purpledark;
+}
+
+.bg-pink {
+    background: $chromia-pink;
+}
+
+.bg-pinkdark {
+    background: $chromia-darkpink;
+}
+
+.bg-yellow {
+    background: $chromia-yellow;
+}
+
+.bg-yellowdark {
+    background: $chromia-yellowdark;
+}
+
+.bg-offwhite {
+    background: $chromia-offwhite;
+}
+
+.text-cdark {
+    color: $chromia-dark;
+}
+
+.text-gray {
+    color: $chromia-gray;
+}
+
+.text-red {
+    color: $chromia-red;
+}
+
+.text-red-dark {
+    color: $chromia-darkred;
+}
+
+.text-orange {
+    color: $chromia-orange;
+}
+
+.text-orange-dark {
+    color: $chromia-orangedark;
+}
+
+.text-purple {
+    color: $chromia-purple;
+}
+
+.text-purple-dark {
+    color: $chromia-purpledark;
+}
+
+.text-pink {
+    color: $chromia-pink;
+}
+
+.text-pink-dark {
+    color: $chromia-darkpink;
+}
+
+.text-yellow {
+    color: $chromia-yellow;
+}
+
+.text-yellow-dark {
+    color: $chromia-yellowdark;
+}
+
+.text-offwhite {
+    color: $chromia-offwhite;
+}
+
+.text-white-dark {
+    color: $chromia-offwhitedark;
+}
+
+
+/* Opacity */
+
+.op- {
+    &0 {
+        opacity: 0;
+    }
+    &1 {
+        opacity: 0.1;
+    }
+    &2 {
+        opacity: 0.2;
+    }
+    &3 {
+        opacity: 0.3;
+    }
+    &4 {
+        opacity: 0.4;
+    }
+    &5 {
+        opacity: 0.5;
+    }
+    &6 {
+        opacity: 0.6;
+    }
+    &7 {
+        opacity: 0.7;
+    }
+    &8 {
+        opacity: 0.8;
+    }
+    &9 {
+        opacity: 0.9;
+    }
+    &10 {
+        opacity: 1;
+    }
+}
+
+// Responsive FrameWork
+.p-6 {
+    padding: $space6;
+}
+
+.pl-6 {
+    padding-left: $space6;
+}
+
+.pr-6 {
+    padding-right: $space6;
+}
+
+.px-6 {
+    padding-left: $space6;
+    padding-right: $space6;
+}
+
+.py-6 {
+    padding-top: $space6;
+    padding-bottom: $space6;
+}
+
+// For Tablet Devices
+@media (max-width: 768px) {
+    // Margin Padding for Tablet Devices
+    // PAdding 1
+    .md-pt {
+        padding-top: $spacemd !important;
+    }
+    .md-pb {
+        padding-bottom: $spacemd !important;
+    }
+    .md-pl {
+        padding-left: $spacemd !important;
+    }
+    .md-pr {
+        padding-right: $spacemd !important;
+    }
+    .md-py {
+        padding-top: $spacemd !important;
+        padding-bottom: $spacemd !important;
+    }
+    .md-px {
+        padding-right: $spacemd !important;
+        padding-left: $spacemd !important;
+    }
+    // PAdding 2
+    .md-pt2 {
+        padding-top: $spacesecmd !important;
+    }
+    .md-pb2 {
+        padding-bottom: $spacesecmd !important;
+    }
+    .md-pl2 {
+        padding-left: $spacesecmd !important;
+    }
+    .md-pr2 {
+        padding-right: $spacesecmd !important;
+    }
+    .md-py2 {
+        padding-top: $spacesecmd !important;
+        padding-bottom: $spacesecmd !important;
+    }
+    .md-px2 {
+        padding-right: $spacesecmd !important;
+        padding-left: $spacesecmd !important;
+    }
+    // Margin
+    .md-mt {
+        margin-top: $spacemd !important;
+    }
+    .md-mb {
+        margin-bottom: $spacemd !important;
+    }
+    .md-ml {
+        margin-left: $spacemd !important;
+    }
+    .md-mr {
+        margin-left: $spacemd !important;
+    }
+    .md-my {
+        margin-top: $spacemd !important;
+        margin-bottom: $spacemd !important;
+    }
+    .md-mx {
+        margin-left: $spacemd !important;
+        margin-right: $spacemd !important;
+    }
+    .md-mt2 {
+        margin-top: $spacesecmd !important;
+    }
+    .md-mb2 {
+        margin-bottom: $spacesecmd !important;
+    }
+    .md-ml2 {
+        margin-left: $spacesecmd !important;
+    }
+    .md-mr2 {
+        margin-left: $spacesecmd !important;
+    }
+    .md-my2 {
+        margin-top: $spacesecmd !important;
+        margin-bottom: $spacesecmd !important;
+    }
+    .md-mx2 {
+        margin-left: $spacesecmd !important;
+        margin-right: $spacesecmd !important;
+    }
+    .md-pt0 {
+        padding-top: 0 !important;
+    }
+    .md-pb0 {
+        padding-bottom: 0 !important;
+    }
+    .md-pr0 {
+        padding-right: 0 !important;
+    }
+    .md-pl0 {
+        padding-left: 0 !important;
+    }
+    .md-py0 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .md-px0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .md-mt0 {
+        margin-top: 0 !important;
+    }
+    .md-mb0 {
+        margin-bottom: 0 !important;
+    }
+    .md-ml0 {
+        margin-left: 0 !important;
+    }
+    .md-mr0 {
+        margin-right: 0 !important;
+    }
+    .md-mx0 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .md-my0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+// For Mobile Devices
+@media (max-width: 595px) {
+    // Font Sizes For Mobile Devices
+    .sm-font-head {
+        font-size: $font-head-sm !important;
+    }
+    .sm-font-head2 {
+        font-size: $font-head2-sm !important;
+    }
+    .sm-font-main2 {
+        font-size: $font-main-sm2 !important;
+    }
+    .sm-font-main {
+        font-size: $font-main-sm !important;
+    }
+    // Padding, Margin for Mobile Devices
+    .sm-pt {
+        padding-top: $spacesm !important;
+    }
+    .sm-pb {
+        padding-bottom: $spacesm !important;
+    }
+    .sm-pl {
+        padding-left: $spacesm !important;
+    }
+    .sm-pr {
+        padding-right: $spacesm !important;
+    }
+    .sm-py {
+        padding-top: $spacesm !important;
+        padding-bottom: $spacesm !important;
+    }
+    .sm-px {
+        padding-left: $spacesm !important;
+        padding-right: $spacesm !important;
+    }
+    .sm-mt {
+        margin-top: $spacesm !important;
+    }
+    .sm-mb {
+        margin-bottom: $spacesm !important;
+    }
+    .sm-ml {
+        margin-left: $spacesm !important;
+    }
+    .sm-mr {
+        margin-right: $spacesm !important;
+    }
+    .sm-my {
+        margin-top: $spacesm !important;
+        margin-bottom: $spacesm !important;
+    }
+    .sm-mx {
+        margin-left: $spacesm !important;
+        margin-right: $spacesm !important;
+    }
+}
